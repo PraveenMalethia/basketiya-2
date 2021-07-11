@@ -12,10 +12,18 @@
       "
     >
       <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-        <a class="mr-5 hover:text-white cursor-pointer">Home</a>
-        <a class="mr-5 hover:text-white cursor-pointer">Cart</a>
-        <a class="mr-5 hover:text-white cursor-pointer">Orders</a>
-        <a class="hover:text-white cursor-pointer">Track Order</a>
+        <nuxt-link to="/" class="mr-5 hover:text-white cursor-pointer">
+          Home
+        </nuxt-link>
+        <nuxt-link to="/cart" class="mr-5 hover:text-white cursor-pointer">
+          Cart
+        </nuxt-link>
+        <nuxt-link to="/orders" class="mr-5 hover:text-white cursor-pointer">
+          Orders
+        </nuxt-link>
+        <nuxt-link to="/track-order" class="hover:text-white cursor-pointer">
+          Track Order
+        </nuxt-link>
       </nav>
       <a
         class="
