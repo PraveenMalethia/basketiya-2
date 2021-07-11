@@ -17,44 +17,16 @@
           </h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-gray-400 hover:text-white">First Link</a>
+              <nuxt-link to="/" class="text-gray-400 hover:text-white">First Link</nuxt-link>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white">Second Link</a>
+              <nuxt-link to="/" class="text-gray-400 hover:text-white">Second Link</nuxt-link>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white">Third Link</a>
+              <nuxt-link to="/" class="text-gray-400 hover:text-white">Third Link</nuxt-link>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white">Fourth Link</a>
-            </li>
-          </nav>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2
-            class="
-              title-font
-              font-medium
-              text-white
-              tracking-widest
-              text-sm
-              mb-3
-            "
-          >
-            CATEGORIES
-          </h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-400 hover:text-white">First Link</a>
-            </li>
-            <li>
-              <a class="text-gray-400 hover:text-white">Second Link</a>
-            </li>
-            <li>
-              <a class="text-gray-400 hover:text-white">Third Link</a>
-            </li>
-            <li>
-              <a class="text-gray-400 hover:text-white">Fourth Link</a>
+              <nuxt-link to="/" class="text-gray-400 hover:text-white">Fourth Link</nuxt-link>
             </li>
           </nav>
         </div>
@@ -73,16 +45,44 @@
           </h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-gray-400 hover:text-white">First Link</a>
+              <nuxt-link to="/" class="text-gray-400 hover:text-white">First Link</nuxt-link>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white">Second Link</a>
+              <nuxt-link to="/" class="text-gray-400 hover:text-white">Second Link</nuxt-link>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white">Third Link</a>
+              <nuxt-link to="/" class="text-gray-400 hover:text-white">Third Link</nuxt-link>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white">Fourth Link</a>
+              <nuxt-link to="/" class="text-gray-400 hover:text-white">Fourth Link</nuxt-link>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2
+            class="
+              title-font
+              font-medium
+              text-white
+              tracking-widest
+              text-sm
+              mb-3
+            "
+          >
+            CATEGORIES
+          </h2>
+          <nav class="list-none mb-10">
+            <li>
+              <nuxt-link to="/" class="text-gray-400 hover:text-white">First Link</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/" class="text-gray-400 hover:text-white">Second Link</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/" class="text-gray-400 hover:text-white">Third Link</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/" class="text-gray-400 hover:text-white">Fourth Link</nuxt-link>
             </li>
           </nav>
         </div>
@@ -116,7 +116,7 @@
                 for="footer-field"
                 class="leading-7 text-sm text-gray-400"
               >
-                Placeholder
+                Email
               </label>
               <input
                 id="footer-field"
@@ -160,12 +160,12 @@
                 rounded
               "
             >
-              Button
+              Subscribe
             </button>
           </div>
           <p class="text-gray-500 text-sm mt-2 md:text-left text-center">
-            Bitters chicharrones fanny pack
-            <br class="lg:block hidden" />waistcoat green juice
+            Subscribe to our newsletter
+            <!-- <br class="lg:block hidden" />waistcoat green juice -->
           </p>
         </div>
       </div>
