@@ -1,12 +1,60 @@
 <template>
-  <div class="lg:w-1/4 md:w-1/2 p-4">
-    <a class="block relative h-48 rounded overflow-hidden">
-      <img alt="ecommerce" class="object-cover object-center w-full h-full block" :src="product.img">
-    </a>
-    <div class="mt-4">
-      <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-      <h2 class="text-white title-font text-lg font-medium">The Catalyzer</h2>
-      <p class="mt-1">$16.00</p>
+  <div class="w-80 flex justify-center items-center">
+    <div class="w-full p-4">
+      <div
+        class="
+          card
+          flex flex-col
+          justify-center
+          p-10
+          bg-white
+          rounded-lg
+          shadow-2xl
+        "
+      >
+        <div class="prod-title">
+          <p class="text-2xl uppercase text-gray-900 font-bold">Puma Shoes</p>
+          <p class="uppercase text-sm text-gray-400">
+            The best shoes in the marketplace
+          </p>
+        </div>
+        <div class="prod-img">
+          <img
+            :src="product.img"
+            class="w-full object-cover object-center"
+          />
+        </div>
+          <div
+            class="
+              flex flex-col
+              md:flex-row
+              justify-between
+              items-center
+              text-gray-900
+              mt-5
+            "
+          >
+            <p class="font-bold text-xl">65 $</p>
+            <button
+              class="
+                px-6
+                py-2
+                transition
+                ease-in
+                duration-200
+                uppercase
+                rounded-full
+                hover:bg-gray-800
+                hover:text-white
+                border-2 border-gray-900
+                focus:outline-none
+              "
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

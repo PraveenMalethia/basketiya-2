@@ -58,43 +58,9 @@
         <span class="ml-3 text-xl xl:block lg:hidden">Basketiya</span>
       </a>
       <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-        <button
-          class="
-            inline-flex
-            items-center
-            bg-gray-800
-            border-0
-            py-1
-            px-3
-            focus:outline-none
-            hover:bg-gray-700
-            rounded
-            text-base
-            mt-4
-            md:mt-0
-          "
-        >
-          Praveen Malethia
-        </button>
-        <button
-          class="
-            inline-flex
-            items-center
-            bg-red-800
-            border-0
-            py-1
-            px-3
-            focus:outline-none
-            hover:bg-red-700
-            rounded
-            text-base
-            mt-4
-            md:mt-0
-            ml-2
-          "
-        >
-          Logout
-        </button>
+        <a href="#" class="block relative">
+            <img alt="profil" src="/images/user.jpg" class="mx-auto object-cover rounded-full h-16 w-16 "/>
+        </a>
       </div>
     </div>
   </header>
