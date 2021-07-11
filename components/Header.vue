@@ -66,7 +66,7 @@
             md:mt-0
           "
         >
-          {{$auth.user.username}}
+          Praveen Malethia
           <svg
             fill="none"
             stroke="currentColor"
@@ -80,7 +80,6 @@
           </svg>
         </button>
         <button
-        @click="$auth.logout()"
           class="
             inline-flex
             items-center
