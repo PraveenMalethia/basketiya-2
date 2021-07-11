@@ -61,21 +61,19 @@
         <a
           href="#"
           class="block relative"
-          @focus="profile_dropdown=!profile_dropdown"
           @focusout="profile_dropdown=false"
           tabindex="0"
         >
           <img @click="profile_dropdown=!profile_dropdown" alt="profil" src="/images/user.jpg" class="mx-auto object-cover rounded-full h-16 w-16"/>
-
           <div v-if="profile_dropdown" class="bg-gray-700 mt-2 absolute right-7 z-20 rounded-md">
             <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md">
-              <p class="text-gray-100 text-lg">Stripe</p>
+              <p class="text-gray-100 text-lg">Profile</p>
             </div>
             <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md">
-              <p class="text-gray-100 text-lg">Mastercard</p>
+              <p class="text-gray-100 text-lg">Orders</p>
             </div>
-            <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md">
-              <p class="text-gray-100 text-lg">Paypal</p>
+            <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-red-400 bg-red-600 rounded-md">
+              <p class="text-gray-100 text-lg">Logout</p>
             </div>
           </div>
         </a>
@@ -96,4 +94,3 @@ export default {
 
 <style>
 </style>
-
