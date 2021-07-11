@@ -58,8 +58,26 @@
         <span class="ml-3 text-xl xl:block lg:hidden">Basketiya</span>
       </a>
       <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-        <a href="#" class="block relative">
-            <img alt="profil" src="/images/user.jpg" class="mx-auto object-cover rounded-full h-16 w-16 "/>
+        <a
+          href="#"
+          class="block relative"
+          @focus="profile_dropdown=!profile_dropdown"
+          @focusout="profile_dropdown=false"
+          tabindex="0"
+        >
+          <img alt="profil" src="/images/user.jpg" class="mx-auto object-cover rounded-full h-16 w-16"/>
+
+          <div v-if="profile_dropdown" class="bg-gray-700 mt-2 absolute right-7 z-20 rounded-md">
+            <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md">
+              <p class="text-gray-100 text-lg">Stripe</p>
+            </div>
+            <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md">
+              <p class="text-gray-100 text-lg">Mastercard</p>
+            </div>
+            <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md">
+              <p class="text-gray-100 text-lg">Paypal</p>
+            </div>
+          </div>
         </a>
       </div>
     </div>
@@ -67,7 +85,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      profile_dropdown: false
+    }
+  }
+}
 </script>
 
 <style>
