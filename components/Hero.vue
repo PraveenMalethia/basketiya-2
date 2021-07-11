@@ -39,39 +39,30 @@
         </p>
         <div class="flex justify-center">
           <button
-            class="
-              inline-flex
-              text-white
-              bg-indigo-500
-              border-0
-              py-2
-              px-6
-              focus:outline-none
-              hover:bg-indigo-600
-              rounded
-              text-lg
-            "
-          >
-            Get Started
-          </button>
-          <button
-            class="
-              ml-4
-              inline-flex
-              text-gray-400
-              bg-gray-800
-              border-0
-              py-2
-              px-6
-              focus:outline-none
-              hover:bg-gray-700
-              hover:text-white
-              rounded
-              text-lg
-            "
-          >
-            Explore
-          </button>
+              class="
+                text-purple-500
+                bg-transparent
+                border border-solid border-purple-500
+                hover:bg-purple-500
+                hover:text-white
+                active:bg-emerald-600
+                font-bold
+                uppercase
+                px-8
+                py-3
+                rounded-full
+                outline-none
+                focus:outline-none
+                mr-1
+                mb-1
+                ease-linear
+                transition-all
+                duration-150
+              "
+              type="button"
+            >
+            Let's start shopping . . .
+            </button>
         </div>
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

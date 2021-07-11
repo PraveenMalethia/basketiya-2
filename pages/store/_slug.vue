@@ -12,14 +12,14 @@
             object-cover object-center
             rounded
           "
-          src="https://dummyimage.com/400x400"
+          :src="product.img"
         />
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
           <h2 class="text-sm title-font text-gray-500 tracking-widest">
             BRAND NAME
           </h2>
           <h1 class="text-white text-3xl title-font font-medium mb-1">
-            {{this.$route.params.slug}}
+            {{product.name}}
           </h1>
           <div class="flex mb-4">
             <span class="flex items-center">
@@ -299,7 +299,18 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data: () => {
+    return {
+      product: {}
+    }
+  },
+  mounted () {
+    const id = this.$route.params.slug
+    this.product = this.$store.state.store.products.filter(p => p.id === parseInt(id))[0]
+    console.log(this.product)
+  }
+}
 </script>
 
 <style>

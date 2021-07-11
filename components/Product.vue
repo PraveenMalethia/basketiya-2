@@ -2,7 +2,7 @@
   <div class="w-80 flex justify-center items-center transform hover:rotate-3 transition duration-300 ease-in-out">
     <div class="w-full p-4">
       <nuxt-link
-        :to="`/store/${product.name}`"
+        :to="`/store/${product.id}`"
         class="
           card
           flex flex-col
