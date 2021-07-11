@@ -8,6 +8,7 @@
           <Product :product="product" />
         </div>
       </div>
+      <Tabs/>
     </div>
   </section>
 </div>
