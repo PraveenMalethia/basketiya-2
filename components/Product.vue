@@ -1,7 +1,8 @@
 <template>
-  <nuxt-link :to="`/store/${product.name}`" class="w-80 flex justify-center items-center">
+  <div class="w-80 flex justify-center items-center">
     <div class="w-full p-4">
-      <div
+      <nuxt-link
+        :to="`/store/${product.name}`"
         class="
           card
           flex flex-col
@@ -50,9 +51,9 @@
             Add to cart
           </button>
         </div>
-      </div>
+      </nuxt-link>
     </div>
-  </nuxt-link>
+  </div>
 </template>
 
 <script>
