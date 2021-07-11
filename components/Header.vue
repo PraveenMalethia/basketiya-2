@@ -65,7 +65,7 @@
           @focusout="profile_dropdown=false"
           tabindex="0"
         >
-          <img alt="profil" src="/images/user.jpg" class="mx-auto object-cover rounded-full h-16 w-16"/>
+          <img @click="profile_dropdown=!profile_dropdown" alt="profil" src="/images/user.jpg" class="mx-auto object-cover rounded-full h-16 w-16"/>
 
           <div v-if="profile_dropdown" class="bg-gray-700 mt-2 absolute right-7 z-20 rounded-md">
             <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md">
@@ -96,3 +96,4 @@ export default {
 
 <style>
 </style>
+
