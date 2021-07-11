@@ -7,7 +7,7 @@
           flex flex-col
           justify-center
           p-10
-          bg-white
+          bg-gray-300
           rounded-lg
           shadow-2xl
         "
@@ -19,40 +19,36 @@
           </p>
         </div>
         <div class="prod-img">
-          <img
-            :src="product.img"
-            class="w-full object-cover object-center"
-          />
+          <img :src="product.img" class="w-full object-cover object-center" />
         </div>
-          <div
+        <div
+          class="
+            flex flex-col
+            md:flex-row
+            justify-between
+            items-center
+            text-gray-900
+            mt-5
+          "
+        >
+          <p class="font-bold text-xl">65 $</p>
+          <button
             class="
-              flex flex-col
-              md:flex-row
-              justify-between
-              items-center
-              text-gray-900
-              mt-5
+              px-6
+              py-2
+              transition
+              ease-in
+              duration-200
+              uppercase
+              rounded-full
+              hover:bg-gray-800
+              hover:text-white
+              border-2 border-gray-900
+              focus:outline-none
             "
           >
-            <p class="font-bold text-xl">65 $</p>
-            <button
-              class="
-                px-6
-                py-2
-                transition
-                ease-in
-                duration-200
-                uppercase
-                rounded-full
-                hover:bg-gray-800
-                hover:text-white
-                border-2 border-gray-900
-                focus:outline-none
-              "
-            >
-              Add to cart
-            </button>
-          </div>
+            Add to cart
+          </button>
         </div>
       </div>
     </div>
