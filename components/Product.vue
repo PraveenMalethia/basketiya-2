@@ -1,5 +1,5 @@
 <template>
-  <div class="w-80 flex justify-center items-center">
+  <nuxt-link :to="`/store/${product.name}`" class="w-80 flex justify-center items-center">
     <div class="w-full p-4">
       <div
         class="
@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </nuxt-link>
 </template>
 
 <script>
