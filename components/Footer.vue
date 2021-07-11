@@ -112,12 +112,15 @@
             "
           >
             <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
-              <label for="footer-field" class="leading-7 text-sm text-gray-400"
-                >Placeholder</label
+              <label
+                for="footer-field"
+                class="leading-7 text-sm text-gray-400"
               >
+                Placeholder
+              </label>
               <input
-                type="text"
                 id="footer-field"
+                type="text"
                 name="footer-field"
                 class="
                   w-full
@@ -205,17 +208,16 @@
               d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
             ></path>
           </svg>
-          <span class="ml-3 text-xl">Tailblocks</span>
+          <span class="ml-3 text-xl">Basketiya</span>
         </a>
         <p class="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">
-          © 2020 Tailblocks —
+          © 2020 Basketiya —
           <a
-            href="https://twitter.com/knyttneve"
+            href="https://twitter.com/Praveenmalethia"
             class="text-gray-500 ml-1"
             target="_blank"
             rel="noopener noreferrer"
-            >@knyttneve</a
-          >
+          >@Praveenmalethia</a>
         </p>
         <span
           class="
@@ -265,7 +267,15 @@
               class="w-5 h-5"
               viewBox="0 0 24 24"
             >
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <rect
+                width="20"
+                height="20"
+                x="2"
+                y="2"
+                rx="5"
+                ry="5"
+              >
+              </rect>
               <path
                 d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
               ></path>
