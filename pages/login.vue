@@ -31,11 +31,15 @@
             md:py-8
             mt-10
             md:mt-0
+            shadow-lg
+            rounded-3xl
+            p-6
+            bg-gray-800
           "
         >
-          <h2 class="text-white text-lg mb-1 font-medium title-font">
+          <h1 class="text-white text-center lg:text-4xl md:text-2xl sm:text-xl mb-1 font-medium title-font">
             Login
-          </h2>
+          </h1>
           <div class="relative mb-4">
             <label
               for="username"
@@ -52,7 +56,7 @@
                 rounded
                 border border-gray-700
                 focus:border-purple-500
-                focus:ring-2 focus:ring-purple-900
+                focus:ring-4 focus:ring-purple-900
                 text-base
                 outline-none
                 text-gray-100
@@ -80,7 +84,7 @@
                 rounded
                 border border-gray-700
                 focus:border-purple-500
-                focus:ring-2 focus:ring-purple-900
+                focus:ring-4 focus:ring-purple-900
                 text-base
                 outline-none
                 text-gray-100
@@ -95,34 +99,64 @@
           <button
             class="
             text-white
-            bg-purple-500
+            bg-purple-600
             border-0
             py-2
             px-6
+            mt-8
+            transition
+            ease-in-out
+            duration-400
             focus:outline-none
-            hover:bg-purple-600
-            rounded
+            hover:bg-purple-800
+            rounded-xl
             text-lg"
             @click="submit()"
           >
             Login
           </button>
-          <button
+          <nuxt-link
             class="
             text-white
-            bg-green-500
             border-0
             py-2
             px-6
-            mt-2
+            mt-5
             focus:outline-none
-            hover:bg-purple-600
-            rounded
+            hover:bg-green-500
+            rounded-xl
+            transition
+            ease-in-out
+            duration-400
+            border-2
+            border-green-600
+            text-center
             text-lg"
-            @click="$router.push('/sign-up')"
+            to="/sign-up"
           >
             Sign Up
-          </button>
+          </nuxt-link>
+          <p class="text-center mt-4">Or</p>
+          <nuxt-link
+            class="
+            text-white
+            py-2
+            px-6
+            mt-5
+            focus:outline-none
+            hover:bg-gray-900
+            rounded-xl
+            transition
+            ease-in-out
+            duration-400
+            border-2
+            border-gray-900
+            text-center
+            text-lg"
+            to="/sign-up"
+          >
+            Forget Password ?
+          </nuxt-link>
         </div>
       </div>
     </section>
