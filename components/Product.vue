@@ -1,5 +1,5 @@
 <template>
-  <div class="w-80 flex justify-center items-center transform hover:rotate-3 transition duration-300 ease-in-out">
+  <div class="w-80 flex justify-center items-center transform hover:scale-105 transition duration-300 ease-in-out">
     <div class="w-full p-4">
       <nuxt-link
         :to="`/store/${product.id}`"
