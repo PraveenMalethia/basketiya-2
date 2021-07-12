@@ -58,25 +58,26 @@
         <span class="ml-3 text-xl xl:block lg:hidden">Basketiya</span>
       </a>
       <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-        <a
-          href="#"
+        <button
           class="block relative"
           @focusout="profile_dropdown=false"
           tabindex="0"
         >
-          <img @click="profile_dropdown=!profile_dropdown" alt="profil" src="/images/user.jpg" class="mx-auto object-cover rounded-full h-16 w-16"/>
-          <div v-if="profile_dropdown" class="bg-gray-700 mt-2 absolute right-7 z-20 rounded-md px-2 py-2">
-            <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md">
-              <p class="text-gray-100 text-lg">Profile</p>
+          <img @click="profile_dropdown=!profile_dropdown" alt="profil" src="/images/user.jpg" class="mx-auto z-20 object-cover rounded-full h-16 w-16"/>
+          <transition name="toast" style="z-index:1">
+            <div v-if="profile_dropdown" class="bg-gray-700 mt-2 absolute right-7 z-20 rounded-md px-2 py-2">
+              <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md">
+                <p class="text-gray-100 text-lg">Profile</p>
+              </div>
+              <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md mt-2">
+                <p class="text-gray-100 text-lg">Orders</p>
+              </div>
+              <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-red-400 bg-red-600 rounded-md mt-2">
+                <p class="text-gray-100 text-lg">Logout</p>
+              </div>
             </div>
-            <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md mt-2">
-              <p class="text-gray-100 text-lg">Orders</p>
-            </div>
-            <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-red-400 bg-red-600 rounded-md mt-2">
-              <p class="text-gray-100 text-lg">Logout</p>
-            </div>
-          </div>
-        </a>
+          </transition>
+        </button>
       </div>
     </div>
   </header>
@@ -93,4 +94,31 @@ export default {
 </script>
 
 <style>
+/* enter transitions */
+  .toast-enter {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+  }
+  .toast-enter-to {
+    opacity: 0;
+    transform: scale(1);
+    transform-origin: top center;
+  }
+  .toast-enter-active {
+    opacity: 1;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  /* leave transitions */
+  .toast-leave-from {
+    transform: scaleY(1);
+  }
+  .toast-leave-to {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  .toast-leave-active {
+    transition: transform 0.3s ease;
+  }
 </style>
