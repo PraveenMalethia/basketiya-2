@@ -6,12 +6,30 @@
         mx-auto
         flex flex-wrap
         p-5
-        flex-col
-        md:flex-row
+        md:justify-start
+        md:justify-between
+        justify-end
+        flex-row
         items-center
       "
     >
-      <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+      <div @click="side_nav =! side_nav" class="absolute top-6 left-4 mr-4 text-white block md:hidden" :class="{'opacity-0 relative':side_nav}">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="w-8 h-8 text-white p-2 bg-purple-500 rounded-full"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+          ></path>
+        </svg>
+     </div>
+      <nav class="flex hidden md:block lg:w-2/5 flex-wrap items-center text-base">
         <nuxt-link to="/" class="mr-5 hover:text-white cursor-pointer">
           Home
         </nuxt-link>
@@ -28,16 +46,17 @@
       <a
         class="
           flex
-          order-first
-          lg:order-none
-          lg:w-1/5
+          md:order-none
+          md:w-1/5
           title-font
           font-medium
           items-center
           text-white
-          lg:items-center
-          lg:justify-center
+          md:items-center
+          md:justify-center
           mb-4
+          mr-4
+          md:mr-0
           md:mb-0
         "
       >
@@ -55,24 +74,24 @@
             d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
           ></path>
         </svg>
-        <span class="ml-3 text-xl xl:block lg:hidden">Basketiya</span>
+        <span class="ml-3 text-lg md:text-xl block">Basketiya</span>
       </a>
-      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+      <div class="lg:w-2/5 inline-flex lg:justify-end md:ml-5 lg:ml-0">
         <button
           class="block relative"
           @focusout="profile_dropdown=false"
           tabindex="0"
         >
-          <img @click="profile_dropdown=!profile_dropdown" alt="profil" src="/images/user.jpg" class="mx-auto z-20 object-cover rounded-full h-16 w-16"/>
+          <img @click="profile_dropdown=!profile_dropdown" alt="profil" src="/images/user.jpg" class="z-20 mx-auto rounded-full h-12 w-12 md:h-16 md:w-16"/>
           <transition name="toast" style="z-index:1">
             <div v-if="profile_dropdown" class="bg-gray-700 mt-2 absolute right-7 z-20 rounded-md px-2 py-2">
-              <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md transition easy-in-out duration-400">
+              <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md transition ease-in-out duration-300">
                 <p class="text-gray-100 text-lg">Profile</p>
               </div>
-              <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md mt-2 transition easy-in-out duration-400">
+              <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-gray-600 rounded-md mt-2 transition ease-in-out duration-300">
                 <p class="text-gray-100 text-lg">Orders</p>
               </div>
-              <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-red-400 bg-red-600 rounded-md mt-2 transition easy-in-out duration-400">
+              <div class="py-3 px-4 md:w-40 lg:w-56 xl:w-64 hover:bg-red-400 bg-red-600 rounded-md mt-2 transition ease-in-out duration-300">
                 <p class="text-gray-100 text-lg">Logout</p>
               </div>
             </div>
@@ -80,6 +99,11 @@
         </button>
       </div>
     </div>
+    <transition name="sidenav" class="z-40">
+      <div v-if="side_nav">
+        <SideNavBar v-on:close="close" />
+      </div>
+    </transition>
   </header>
 </template>
 
@@ -87,13 +111,22 @@
 export default {
   data () {
     return {
-      profile_dropdown: false
+      profile_dropdown: false,
+      side_nav: false
+    }
+  },
+  methods: {
+    showSideNav () {
+      console.log('showing..')
+    },
+    close () {
+      this.side_nav = false
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
 /* enter transitions */
   .toast-enter {
     opacity: 0;
@@ -120,5 +153,20 @@ export default {
   }
   .toast-leave-active {
     transition: transform 0.3s ease;
+  }
+
+  .sidenav-enter {
+  opacity: 1;
+  transform: translateX(-100px);
+  }
+  .sidenav-enter-active {
+    transition: all 0.3s ease;
+  }
+  .sidenav-leave-to {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  .sidenav-leave-active {
+    transition: all 0.3s ease;
   }
 </style>
