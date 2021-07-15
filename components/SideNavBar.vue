@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-screen text-white -mt-24 z-40 bg-gray-900 pl-28 px-4 py-14 fixed block">
+  <div class="h-screen min-w-max text-white -mt-24 z-40 bg-gray-800 pl-28 px-4 py-14 fixed block">
     <svg
       class="absolute top-6 left-6 w-8 h-8"
       @click="close"
@@ -13,10 +13,10 @@
       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
     </svg>
     <div @click="close" class="flex flex-col space-y-4">
-      <nuxt-link to="/" @click="close" class="text-3xl font-semibold">Home</nuxt-link>
-      <nuxt-link to="/cart" @click="close" class="text-3xl font-semibold">Cart</nuxt-link>
-      <nuxt-link to="/orders" @click="close" class="text-3xl font-semibold">Orders</nuxt-link>
-      <nuxt-link to="/track-order" @click="close" class="text-3xl font-semibold">Track Order</nuxt-link>
+      <nuxt-link to="/" @click="close" class="text-3xl font-semibold hover:bg-gray-700 p-2 rounded-xl transition duration-300 easy-in-out">Home</nuxt-link>
+      <nuxt-link to="/cart" @click="close" class="text-3xl font-semibold hover:bg-gray-700 p-2 rounded-xl transition duration-300 easy-in-out">Cart</nuxt-link>
+      <nuxt-link to="/orders" @click="close" class="text-3xl font-semibold hover:bg-gray-700 p-2 rounded-xl transition duration-300 easy-in-out">Orders</nuxt-link>
+      <nuxt-link to="/track-order" @click="close" class="text-3xl font-semibold hover:bg-gray-700 p-2 rounded-xl transition duration-300 easy-in-out">Track Order</nuxt-link>
     </div>
   </div>
 </template>
