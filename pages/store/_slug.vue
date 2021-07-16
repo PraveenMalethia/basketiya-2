@@ -8,9 +8,11 @@
               <img
                 alt="ecommerce"
                 class="
-                  w-auto
+                  w-full
+                  lg:w-auto
                   lg:h-auto
                   h-64
+                  mx-auto
                   object-cover object-center
                   rounded
                   xl:h-full
