@@ -29,7 +29,7 @@ export const state = () => ({
     {
       id: 3,
       name: 'Shoe',
-      img: '/images/product1.jpg',
+      img: '/images/product3.jpg',
       imgs: [
         '/images/product1.jpg',
         '/images/product1.jpg',
@@ -68,7 +68,7 @@ export const state = () => ({
     {
       id: 6,
       name: 'Shoe',
-      img: '/images/product2.jpg',
+      img: '/images/product3.jpg',
       imgs: [
         '/images/product2.jpg',
         '/images/product1.jpg',
@@ -107,7 +107,7 @@ export const state = () => ({
     {
       id: 9,
       name: 'Shoe',
-      img: '/images/product1.jpg',
+      img: '/images/product3.jpg',
       imgs: [
         '/images/product1.jpg',
         '/images/product1.jpg',
@@ -146,7 +146,7 @@ export const state = () => ({
     {
       id: 12,
       name: 'Shoe',
-      img: '/images/product2.jpg',
+      img: '/images/product3.jpg',
       imgs: [
         '/images/product2.jpg',
         '/images/product1.jpg',
