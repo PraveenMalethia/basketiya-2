@@ -8,7 +8,7 @@
               <img
                 alt="ecommerce"
                 class="
-                  w-full
+                  w-auto
                   lg:h-auto
                   h-64
                   object-cover object-center
