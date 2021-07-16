@@ -13,6 +13,7 @@
                   h-64
                   object-cover object-center
                   rounded
+                  xl:h-full
                 "
                 :src="image"
               />
