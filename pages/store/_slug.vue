@@ -2,18 +2,24 @@
   <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
     <div class="container px-5 py-24 mx-auto">
       <div class="lg:w-4/5 mx-auto flex flex-wrap">
-        <img
-          alt="ecommerce"
-          class="
-            lg:w-1/2
-            w-full
-            lg:h-auto
-            h-64
-            object-cover object-center
-            rounded
-          "
-          :src="product.img"
-        />
+        <div class="w-full lg:w-1/2">
+          <Carousel class="relative h-64 lg:h-full overflow-hidden w-full z-10">
+            <CarouselSlide v-for="(image,index) in product.imgs" :key="image" :index="index" class="absolute top-0 bottom-0 left-0 right-0">
+              <img
+                alt="ecommerce"
+                class="
+                  w-full
+                  lg:h-auto
+                  h-64
+                  object-cover object-center
+                  rounded
+                  xl:h-full
+                "
+                :src="image"
+              />
+            </CarouselSlide>
+          </Carousel>
+        </div>
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
           <h2 class="text-sm title-font text-gray-500 tracking-widest">
             BRAND NAME
@@ -207,10 +213,10 @@
                     pr-10
                   "
                 >
-                  <option>SM</option>
-                  <option>M</option>
-                  <option>L</option>
-                  <option>XL</option>
+                  <option class="bg-gray-900">SM</option>
+                  <option class="bg-gray-900">M</option>
+                  <option class="bg-gray-900">L</option>
+                  <option class="bg-gray-900">XL</option>
                 </select>
                 <span
                   class="
@@ -314,4 +320,5 @@ export default {
 </script>
 
 <style>
+
 </style>
