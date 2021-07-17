@@ -1,5 +1,10 @@
 <template>
   <header class="text-gray-400 bg-gray-900 body-font">
+    <transition name="sidenav" class="z-40 fixed top-0 left-0 right-0 bottom-0">
+      <div v-if="side_nav">
+        <SideNavBar v-on:close="close" />
+      </div>
+    </transition>
     <div
       class="
         container
@@ -70,6 +75,7 @@
             alt="profil"
             src="/images/logo.jpg"
             class="mx-auto object-cover rounded-full h-16 w-16"
+            :class="{ 'opacity-0 relative': side_nav }"
           />
         </nuxt-link>
       </a>
@@ -83,7 +89,8 @@
             @click="profile_dropdown = !profile_dropdown"
             alt="profil"
             src="/images/user.jpg"
-            class="z-20 mx-auto rounded-full h-12 w-12 md:h-16 md:w-16"
+            class="z-20 mx-auto rounded-full h-12 w-12  md:h-16 md:w-16"
+            :class="{ 'opacity-0 relative': side_nav }"
           />
           <transition name="toast" style="z-index: 1">
             <div
@@ -155,11 +162,6 @@
         </button>
       </div>
     </div>
-    <transition name="sidenav" class="z-40">
-      <div v-if="side_nav">
-        <SideNavBar v-on:close="close" />
-      </div>
-    </transition>
   </header>
 </template>
 
@@ -210,7 +212,6 @@ export default {
 .toast-leave-active {
   transition: transform 0.3s ease;
 }
-
 .sidenav-enter {
   opacity: 1;
   transform: translateX(-100px);
