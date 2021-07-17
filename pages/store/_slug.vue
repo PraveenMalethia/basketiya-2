@@ -25,7 +25,7 @@
             BRAND NAME
           </h2>
           <h1 class="text-white text-3xl title-font font-medium mb-1">
-            {{product.name}}
+            {{ product.name }}
           </h1>
           <div class="flex mb-4">
             <span class="flex items-center">
@@ -213,10 +213,18 @@
                     pr-10
                   "
                 >
-                  <option class="bg-gray-900">SM</option>
-                  <option class="bg-gray-900">M</option>
-                  <option class="bg-gray-900">L</option>
-                  <option class="bg-gray-900">XL</option>
+                  <option class="bg-gray-900">
+                    SM
+                  </option>
+                  <option class="bg-gray-900">
+                    M
+                  </option>
+                  <option class="bg-gray-900">
+                    L
+                  </option>
+                  <option class="bg-gray-900">
+                    XL
+                  </option>
                 </select>
                 <span
                   class="
@@ -314,7 +322,6 @@ export default {
   mounted () {
     const id = this.$route.params.slug
     this.product = this.$store.state.store.products.filter(p => p.id === parseInt(id))[0]
-    console.log(this.product)
   }
 }
 </script>
