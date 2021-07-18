@@ -5,11 +5,10 @@
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
           Your Orders
         </h1>
-        <!-- <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-          gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-          heard of them.
-        </p> -->
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Here are all of your orders.<br>
+          <b>Click Order to see more details</b>
+        </p>
       </div>
       <div v-for="i in 10" :key="i" class="flex flex-wrap -m-2">
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
