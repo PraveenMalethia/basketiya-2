@@ -24,21 +24,21 @@
       </div>
       <div class="flex flex-wrap md:-m-2 -m-1">
         <div class="flex flex-wrap w-1/2">
-          <div class="md:p-2 p-1 w-1/2">
+          <div class="md:p-2 p-1 w-1/2 transform hover:scale-105 transition duration-400 ease-in-out">
             <img
               alt="gallery"
               class="w-full object-cover h-full object-center block"
               src="/images/feature1.jpg"
             />
           </div>
-          <div class="md:p-2 p-1 w-1/2">
+          <div class="md:p-2 p-1 w-1/2 transform hover:scale-105 transition duration-400 ease-in-out">
             <img
               alt="gallery"
               class="w-full object-cover h-full object-center block"
               src="/images/feature2.jpg"
             />
           </div>
-          <div class="md:p-2 p-1 w-full">
+          <div class="md:p-2 p-1 w-full transform hover:scale-95 transition duration-400 ease-in-out">
             <img
               alt="gallery"
               class="w-full h-full object-cover object-center block"
@@ -47,21 +47,21 @@
           </div>
         </div>
         <div class="flex flex-wrap w-1/2">
-          <div class="md:p-2 p-1 w-full">
+          <div class="md:p-2 p-1 w-full transform hover:scale-95 transition duration-400 ease-in-out">
             <img
               alt="gallery"
               class="w-full h-full object-cover object-center block"
               src="/images/feature4.jpg"
             />
           </div>
-          <div class="md:p-2 p-1 w-1/2">
+          <div class="md:p-2 p-1 w-1/2 transform hover:scale-105 transition duration-400 ease-in-out">
             <img
               alt="gallery"
               class="w-full object-cover h-full object-center block"
               src="/images/feature5.jpg"
             />
           </div>
-          <div class="md:p-2 p-1 w-1/2">
+          <div class="md:p-2 p-1 w-1/2 transform hover:scale-105 transition duration-400 ease-in-out">
             <img
               alt="gallery"
               class="w-full object-cover h-full object-center block"

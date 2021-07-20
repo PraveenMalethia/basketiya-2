@@ -1,8 +1,7 @@
 <template>
   <div class="w-80 flex justify-center items-center transform hover:scale-105 transition duration-400 ease-in-out">
     <div class="w-full p-4">
-      <nuxt-link
-        :to="`/store/${product.id}`"
+      <div
         class="
           card
           flex flex-col
@@ -13,15 +12,19 @@
           shadow-2xl
         "
       >
-        <div class="prod-title">
+        <nuxt-link
+          :to="`/store/${product.id}`"
+          class="prod-title">
           <p class="text-2xl uppercase text-gray-900 font-bold">Puma Shoes</p>
           <p class="uppercase text-sm text-gray-400">
             The best shoes in the marketplace
           </p>
-        </div>
-        <div class="prod-img">
+        </nuxt-link>
+        <nuxt-link
+          :to="`/store/${product.id}`"
+          class="prod-img">
           <img :src="product.img" class="w-full object-cover object-center" />
-        </div>
+        </nuxt-link>
         <div
           class="
             flex flex-col
@@ -51,7 +54,7 @@
             Add to cart
           </button>
         </div>
-      </nuxt-link>
+      </div>
     </div>
   </div>
 </template>
