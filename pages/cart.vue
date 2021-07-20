@@ -11,7 +11,6 @@
         items-center
         "
       >
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Shopping Cart</h1>
       <div class="lg:grid lg:gap-3 lg:grid-cols-6 lg:flex-row space-x-4">
         <div class="col-span-4">
           <div class="flex flex-col space-y-2">
