@@ -1,5 +1,14 @@
 <template>
   <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="flex flex-col text-center w-full mb-1">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+          Your Cart
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Items that you have added in your cart.<br>
+          <b>Click Proceed to Checkout to confirm</b>
+        </p>
+      </div>
     <div
       class="container
         mx-auto
@@ -36,13 +45,27 @@
               <p class="mt-4 text-lg text-white">Total Price:</p>
               <p class="mt-4 text-lg font-bold text-white">₹ 510</p>
             </div>
-            <p class="text-gray-400 text-lg mt-7">Coupon Code:</p>
-            <input
-              type="text"
-              class="mt-2 rounded-md w-full px-3 py-2 text-white text-base md:w-full lg:w-full outline-none bg-gray-800
-              border border-gray-700 focus:border-purple-700 focus:ring-2 focus:ring-purple-700 transition duration-150 ease-in-out shadow-sm"
-            >
-            <button class="mt-8 px-4 py-2 bg-purple-700 rounded-md shadow-md text-white text-lg">Proceed to Checkout</button>
+            <button
+              class="
+                mt-8
+                text-purple-400
+                bg-transparent
+                border-4 border-solid border-purple-500
+                hover:bg-purple-500
+                hover:text-white
+                active:bg-emerald-600
+                font-bold
+                uppercase
+                px-8
+                py-3
+                rounded-full
+                outline-none
+                focus:outline-none
+                mr-1
+                mb-1
+                ease-linear
+                transition-all
+                duration-150">Proceed to Checkout</button>
           </div>
         </div>
       </div>
