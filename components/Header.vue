@@ -2,7 +2,7 @@
   <header class="text-gray-400 bg-gray-900 body-font">
     <transition name="sidenav" class="z-40 fixed top-0 left-0 right-0 bottom-0">
       <div v-if="side_nav">
-        <SideNavBar v-on:close="close" />
+        <SideNavBar @close="close" />
       </div>
     </transition>
     <div
@@ -15,12 +15,11 @@
         justify-end
         flex-row
         items-center
-      "
-    >
+      ">
       <div
-        @click="side_nav = !side_nav"
         class="absolute top-6 left-4 mr-4 text-white block md:hidden"
         :class="{ 'opacity-0 relative': side_nav }"
+        @click="side_nav = !side_nav"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +33,7 @@
         >
           <path
             d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-          ></path>
+          />
         </svg>
       </div>
       <nav
@@ -56,45 +55,19 @@
           Track Order
         </nuxt-link>
       </nav>
-      <a
-        class="
-          flex
-          md:order-none
-          md:w-1/5
-          title-font
-          font-medium
-          items-center
-          text-white
-          md:items-center
-          md:justify-center
-          mb-4
-          mr-4
-          md:mr-0
-          md:mb-0
-        "
-      >
-        <nuxt-link to="/" class="block relative">
-          <img
-            alt="profil"
-            src="/images/logo.jpg"
-            class="mx-auto object-cover rounded-full h-16 w-16"
-            :class="{ 'opacity-0 relative': side_nav }"
-          />
-        </nuxt-link>
-      </a>
       <div class="lg:w-2/5 inline-flex lg:justify-end md:ml-5 lg:ml-0">
         <button
           class="block relative"
-          @focusout="profile_dropdown = false"
           tabindex="0"
+          @focusout="profile_dropdown = false"
         >
           <img
-            @click="profile_dropdown = !profile_dropdown"
-            alt="profil"
-            src="/images/user.jpg"
             class="z-20 mx-auto rounded-full h-12 w-12  md:h-16 md:w-16"
             :class="{ 'opacity-0 relative': side_nav }"
-          />
+            alt="profil"
+            src="/images/user.jpg"
+            @click="profile_dropdown = !profile_dropdown"
+          ></img>
           <transition name="toast" style="z-index: 1">
             <div
               v-if="profile_dropdown"
@@ -123,7 +96,9 @@
                   duration-300
                 "
               >
-                <p class="text-gray-100 text-lg">Profile</p>
+                <p class="text-gray-100 text-lg">
+                  Profile
+                </p>
               </div>
               <div
                 class="
@@ -140,7 +115,9 @@
                   duration-300
                 "
               >
-                <p class="text-gray-100 text-lg">Orders</p>
+                <p class="text-gray-100 text-lg">
+                  Orders
+                </p>
               </div>
               <div
                 class="
@@ -158,7 +135,9 @@
                   duration-300
                 "
               >
-                <p class="text-gray-100 text-lg">Logout</p>
+                <p class="text-gray-100 text-lg">
+                  Logout
+                </p>
               </div>
             </div>
           </transition>
@@ -177,9 +156,6 @@ export default {
     }
   },
   methods: {
-    showSideNav () {
-      console.log('showing..')
-    },
     close () {
       this.side_nav = false
     }

@@ -1,19 +1,19 @@
 <template>
-<div>
-  <Hero />
-  <Featuring />
-  <section class="text-gray-400 bg-gray-900 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-wrap justify-center -m-4">
-        <div v-for="product in products" :key="product.id">
-          <Product :product="product" />
+  <div>
+    <Hero />
+    <Featuring />
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap justify-center -m-4">
+          <div v-for="product in products" :key="product.id">
+            <Product :product="product" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <Tabs/>
-  <SectionDeals/>
-</div>
+    </section>
+    <Tabs />
+    <SectionDeals />
+  </div>
 </template>
 
 <script>

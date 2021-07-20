@@ -28,7 +28,7 @@
         "
       >
         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-          Before they sold out <br class="hidden lg:inline-block" />readymade
+          Before they sold out readymade
           gluten
         </h1>
         <p class="mb-8 leading-relaxed">
@@ -39,37 +39,37 @@
         </p>
         <div class="flex justify-center">
           <button
-              class="
-                text-purple-500
-                bg-transparent
-                border border-solid border-purple-500
-                hover:bg-purple-500
-                hover:text-white
-                active:bg-emerald-600
-                font-bold
-                uppercase
-                px-8
-                py-3
-                rounded-full
-                outline-none
-                focus:outline-none
-                mr-1
-                mb-1
-                ease-linear
-                transition-all
-                duration-150
-              "
-              type="button"
-            >
+            class="
+              text-purple-500
+              bg-transparent
+              border border-solid border-purple-500
+              hover:bg-purple-500
+              hover:text-white
+              active:bg-emerald-600
+              font-bold
+              uppercase
+              px-8
+              py-3
+              rounded-full
+              outline-none
+              focus:outline-none
+              mr-1
+              mb-1
+              ease-linear
+              transition-all
+              duration-150
+            "
+            type="button"
+          >
             Let's start shopping . . .
-            </button>
+          </button>
         </div>
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
         <img
           alt="hero"
           src="/svg/hero.svg"
-        />
+        ></img>
       </div>
     </div>
   </section>
