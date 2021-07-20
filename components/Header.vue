@@ -46,6 +46,9 @@
         <nuxt-link to="/cart" class="mr-5 hover:text-white cursor-pointer">
           Cart
         </nuxt-link>
+        <nuxt-link to="/wishlist" class="mr-5 hover:text-white cursor-pointer">
+          Wishlist
+        </nuxt-link>
         <nuxt-link to="/orders" class="mr-5 hover:text-white cursor-pointer">
           Orders
         </nuxt-link>
