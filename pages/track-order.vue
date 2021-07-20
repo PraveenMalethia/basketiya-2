@@ -23,7 +23,7 @@
                 w-10
                 h-10
                 rounded-full
-                bg-indigo-500
+                bg-blue-500
                 inline-flex
                 items-center
                 justify-center
@@ -52,13 +52,13 @@
                   text-sm text-white
                   mb-1
                   tracking-wider
+                  uppercase
                 "
               >
-                STEP 1
+                Placed
               </h2>
               <p class="leading-relaxed">
-                VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                bespoke try-hard cliche palo santo offal.
+                Your order has been placed successfully.
               </p>
             </div>
           </div>
@@ -82,7 +82,7 @@
                 w-10
                 h-10
                 rounded-full
-                bg-indigo-500
+                bg-red-500
                 inline-flex
                 items-center
                 justify-center
@@ -111,13 +111,13 @@
                   text-sm text-white
                   mb-1
                   tracking-wider
+                  uppercase
                 "
               >
-                STEP 2
+                Canceled
               </h2>
               <p class="leading-relaxed">
-                Vice migas literally kitsch +1 pok pok. Truffaut hot chicken
-                slow-carb health goth, vape typewriter.
+                Your order has been canceled.
               </p>
             </div>
           </div>
@@ -141,7 +141,7 @@
                 w-10
                 h-10
                 rounded-full
-                bg-indigo-500
+                bg-purple-600
                 inline-flex
                 items-center
                 justify-center
@@ -171,13 +171,13 @@
                   text-sm text-white
                   mb-1
                   tracking-wider
+                  uppercase
                 "
               >
-                STEP 3
+                confirmed
               </h2>
               <p class="leading-relaxed">
-                Coloring book nar whal glossier master cleanse umami. Salvia +1
-                master cleanse blog taiyaki.
+                Order has been confirmed , will be out for delivery soon .
               </p>
             </div>
           </div>
@@ -231,13 +231,13 @@
                   text-sm text-white
                   mb-1
                   tracking-wider
+                  uppercase
                 "
               >
-                STEP 4
+                Out for delivery
               </h2>
               <p class="leading-relaxed">
-                VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                bespoke try-hard cliche palo santo offal.
+                The order is now out for delivery it will arrive at your doorsteps soon.
               </p>
             </div>
           </div>
@@ -248,7 +248,7 @@
                 w-10
                 h-10
                 rounded-full
-                bg-indigo-500
+                bg-green-600
                 inline-flex
                 items-center
                 justify-center
@@ -278,23 +278,92 @@
                   text-sm text-white
                   mb-1
                   tracking-wider
+                  uppercase
                 "
               >
-                FINISH
+                Delivered
               </h2>
               <p class="leading-relaxed">
-                Pitchfork ugh tattooed scenester echo park gastropub whatever
-                cold-pressed retro.
+                Your Order has been delived , Thank your for Shopping with us.
               </p>
             </div>
           </div>
         </div>
+      <div
+        class="
+          lg:w-1/3
+          md:w-1/2
+          flex flex-col
+          md:ml-auto
+          w-full
+          md:py-8
+          mt-8
+          md:mt-0
+        "
+      >
+        <h2 class="text-white text-lg mb-1 font-medium title-font">Track Order</h2>
+        <!-- <p class="leading-relaxed mb-5">
+          Post-ironic portland shabby chic echo park, banjo fashion axe
+        </p> -->
+        <div class="relative mb-4">
+          <label
+          for="name"
+          class="leading-7 text-sm text-gray-400">Order id</label>
+          <input
+            type="text"
+            v-model="orderId"
+            id="order_id"
+            name="order_id"
+            class="
+              w-full
+              bg-gray-800
+              rounded
+              border border-gray-700
+              focus:border-indigo-500
+              focus:ring-2 focus:ring-indigo-900
+              text-base
+              outline-none
+              text-gray-100
+              py-1
+              px-3
+              leading-8
+              transition-colors
+              duration-200
+              ease-in-out
+            "
+          />
+        </div>
+        <button
+          class="
+            text-white
+            bg-indigo-500
+            border-0
+            py-2
+            px-6
+            focus:outline-none
+            hover:bg-indigo-600
+            rounded
+            text-lg
+          "
+        >
+          Track order with id {{orderId}}
+        </button>
+        <p class="text-xs text-gray-400 text-opacity-90 mt-3">
+          Your Order status will be display on left side.
+        </p>
       </div>
     </div>
+      </div>
   </section>
 </template>
 <script>
-export default {}
+export default {
+  data: () => {
+    return {
+      orderId: ''
+    }
+  }
+}
 </script>
 
 <style>
