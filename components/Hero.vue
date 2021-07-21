@@ -61,7 +61,7 @@
             "
             type="button"
           >
-            Let's start shopping . . .
+            Let's start shopping . . . {{ $store.state.categories.counters }}
           </button>
         </div>
       </div>
@@ -76,7 +76,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    // addOne () {
+    //   this.$store.commit('categories/increment')
+    // }
+  }
+}
 </script>
 
 <style>
