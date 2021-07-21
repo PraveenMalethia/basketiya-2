@@ -45,7 +45,7 @@
               <p class="mt-4 text-lg text-white">Total Price:</p>
               <p class="mt-4 text-lg font-bold text-white">₹ 510</p>
             </div>
-            <button
+            <nuxt-link
               class="
                 mt-8
                 text-purple-400
@@ -65,7 +65,10 @@
                 mb-1
                 ease-linear
                 transition-all
-                duration-150">Proceed to Checkout</button>
+                duration-150"
+              to="/cart/checkout">
+                Proceed to Checkout
+              </nuxt-link>
           </div>
         </div>
       </div>
