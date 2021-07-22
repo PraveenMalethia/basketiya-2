@@ -15,14 +15,14 @@
         <div class="p-1 w-1/2 md:w-1/6 flex-none overflow-hidden">
           <img src="/images/product3.jpg" class="w-full h-28 md:h-32 flex-none rounded-xl md:rounded-3xl object-cover object-center">
         </div>
-        <div class="flex flex-col md:flex-row md:justify-between space-y-2 md:w-5/6 h-full md:space-x-4">
+        <div class="flex flex-col items-center md:flex-row md:justify-between space-y-2 md:w-5/6 h-full md:space-x-4">
           <h3 class="text-2xl w-full md:w-2/6 font-semibold text-white sm:text-xl">Nike Shoe</h3>
           <p class="text-xl text-white font-semibold">₹ 10.50</p>
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-1 text-gray-200 rounded-md py-1">
-              <button class="rounded-full bg-red border-2 border-gray-300 px-3 hover:bg-gray-300 hover:text-black transition easy-in-out duration-200 text-3xl"> - </button>
+              <button class="flex-none rounded-full bg-red border-2 border-gray-300 px-3 pb-1 hover:bg-gray-300 hover:text-black transition easy-in-out duration-200 text-3xl"> - </button>
               <p class="text-xl text-white px-3">10</p>
-              <button class="rounded-full bg-red border-2 border-green-500 px-3 py-1 hover:bg-green-500 transition easy-in-out duration-200 text-xl"> + </button>
+              <button class="flex-none rounded-full bg-red border-2 border-green-500 px-3 py-1 hover:bg-green-500 transition easy-in-out duration-200 text-xl"> + </button>
             </div>
           </div>
           <button
