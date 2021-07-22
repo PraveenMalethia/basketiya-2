@@ -20,7 +20,7 @@
           <p class="text-xl text-white font-semibold">₹ 10.50</p>
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-1 text-gray-200 rounded-md py-1">
-              <button class="rounded-full bg-red border-2 border-red-500 px-3 py-1 hover:bg-red-500"> - </button>
+              <button class="rounded-full bg-red border-2 border-gray-300 px-3 py-1 hover:bg-red-500"> - </button>
               <p class="text-xl text-white px-3">10</p>
               <button class="rounded-full bg-red border-2 border-green-500 px-3 py-1 hover:bg-green-500"> + </button>
             </div>
