@@ -315,35 +315,32 @@
             id="order_id"
             name="order_id"
             class="
-              w-full
-              bg-gray-800
-              rounded
-              border border-gray-700
-              focus:border-indigo-500
-              focus:ring-2 focus:ring-indigo-900
-              text-base
-              outline-none
-              text-gray-100
-              py-1
-              px-3
-              leading-8
-              transition-colors
-              duration-200
-              ease-in-out
+              input-field
             "
           />
         </div>
         <button
           class="
-            text-white
-            bg-indigo-500
-            border-0
-            py-2
-            px-6
+            mt-4
+            text-green-400
+            bg-transparent
+            border-2 border-solid border-green-500
+            hover:bg-green-500
+            hover:text-white
+            active:bg-emerald-600
+            font-bold
+            uppercase
+            px-8
+            py-3
+            rounded-2xl
+            outline-none
             focus:outline-none
-            hover:bg-indigo-600
-            rounded
-            text-lg
+            mr-1
+            mb-1
+            ease-linear
+            transition-all
+            duration-150
+            text-center
           "
         >
           Track order with id {{orderId}}
