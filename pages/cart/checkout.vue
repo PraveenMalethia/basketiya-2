@@ -103,7 +103,7 @@
           by clicking CONFIRM button your order will be placed . Please check your details again.
         </p>
       </div>
-            <div
+      <div
         class="
           lg:w-2/3
           md:w-1/2
@@ -118,7 +118,7 @@
           relative
         "
       >
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <div class="lg:max-w-lg mx-auto my-auto lg:w-full md:w-1/2 w-5/6">
           <img src="/svg/Shopping_app.svg" alt="Checkout">
         </div>
       </div>
