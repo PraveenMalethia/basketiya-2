@@ -50,7 +50,7 @@
                 mt-8
                 text-purple-400
                 bg-transparent
-                border-4 border-solid border-purple-500
+                border-2 border-solid border-purple-500
                 hover:bg-purple-500
                 hover:text-white
                 active:bg-emerald-600

@@ -42,7 +42,7 @@
               uppercase
               px-20
               py-3
-              rounded-full
+              rounded-xl
               outline-none
               focus:outline-none
               mr-1
@@ -60,7 +60,7 @@
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
         <img
           alt="hero"
-          src="/svg/hero.svg"
+          src="/svg/shopping_app.svg"
         ></img>
       </div>
     </div>
