@@ -2,17 +2,10 @@
   <section class="text-gray-400 bg-gray-900 body-font">
     <h2 class="text-center">Checkout</h2>
     <!-- checkout form  -->
-    <div class="container">
-      <div class="row">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap justify-center -m-4">
         <div class="col-md-6">
           <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 class="text-center">Checkout</h4>
-                </div>
-              </div>
-            </div>
             <div class="card-body">
               <form class="form-horizontal">
                 <div class="row">
@@ -130,7 +123,28 @@
             <div class="card-footer">
               <div class="row">
                 <div class="col-md-12">
-                  <button class="btn btn-primary" @click="submit">Submit</button>
+                  <button
+                    class="text-purple-500
+                      bg-transparent
+                      border border-solid border-purple-500
+                      hover:bg-purple-500
+                      hover:text-white
+                      active:bg-emerald-600
+                      font-bold
+                      uppercase
+                      px-8
+                      py-3
+                      rounded-full
+                      outline-none
+                      focus:outline-none
+                      mr-1
+                      mb-1
+                      ease-linear
+                      transition-all
+                      duration-150"
+                      @click="submit">
+                      Submit
+                    </button>
                 </div>
               </div>
             </div>
