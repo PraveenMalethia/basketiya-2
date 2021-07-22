@@ -17,7 +17,6 @@
               h-full
               flex
               items-center
-              border-gray-800 border
               p-8
               rounded-xl
               hover:bg-gray-700
