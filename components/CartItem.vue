@@ -20,17 +20,9 @@
           <p class="text-xl text-white font-semibold">₹ 10.50</p>
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-1 text-gray-200 rounded-md py-1">
-              <button>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </button>
+              <button class="rounded-full bg-red border-2 border-red-500 px-3 py-1 hover:bg-red-500"> - </button>
               <p class="text-xl text-white px-3">10</p>
-              <button>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </button>
+              <button class="rounded-full bg-red border-2 border-green-500 px-3 py-1 hover:bg-green-500"> + </button>
             </div>
           </div>
           <button
