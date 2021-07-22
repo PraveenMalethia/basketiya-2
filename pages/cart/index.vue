@@ -65,7 +65,8 @@
                 mb-1
                 ease-linear
                 transition-all
-                duration-150"
+                duration-150
+                text-center"
               to="/cart/checkout">
                 Proceed to Checkout
               </nuxt-link>
