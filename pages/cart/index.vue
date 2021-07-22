@@ -58,7 +58,7 @@
                 uppercase
                 px-8
                 py-3
-                rounded-full
+                rounded-2xl
                 outline-none
                 focus:outline-none
                 mr-1
