@@ -38,7 +38,7 @@
           try-hard chambray.
         </p>
         <div class="flex justify-center">
-          <button
+          <nuxt-link
             class="
               text-purple-500
               bg-transparent
@@ -59,10 +59,10 @@
               transition-all
               duration-150
             "
-            type="button"
+            to="/store"
           >
             Let's start shopping . . . {{ $store.state.categories.counters }}
-          </button>
+          </nuxt-link>
         </div>
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
