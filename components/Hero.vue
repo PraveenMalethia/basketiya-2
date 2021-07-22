@@ -45,7 +45,6 @@
               border border-solid border-purple-500
               hover:bg-purple-500
               hover:text-white
-              active:bg-emerald-600
               font-bold
               uppercase
               px-8

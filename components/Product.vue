@@ -15,7 +15,7 @@
         <nuxt-link
           :to="`/store/${product.id}`"
           class="prod-title">
-          <p class="text-2xl uppercase text-gray-900 font-bold">Puma Shoes</p>
+          <p class="text-2xl uppercase text-gray-900 font-bold">{{product.name}}</p>
           <p class="uppercase text-sm text-gray-400">
             The best shoes in the marketplace
           </p>

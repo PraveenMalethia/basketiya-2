@@ -265,19 +265,26 @@
             >$58.00</span>
             <button
               class="
+              text-purple-500
+                bg-transparent
+                border-2 border-solid border-purple-500
+                hover:bg-purple-500
+                hover:text-white
                 flex
                 ml-auto
-                text-white
-                bg-indigo-500
-                border-0
                 py-2
                 px-6
+                uppercase
+                text-xl
                 focus:outline-none
-                hover:bg-indigo-600
-                rounded
+                rounded-2xl
+                font-bold
+                transition
+                easy-in-out
+                duration-300
               "
             >
-              Button
+              Add To cart
             </button>
             <button
               class="
@@ -291,7 +298,13 @@
                 items-center
                 justify-center
                 text-gray-500
+                hover:text-red-500
                 ml-4
+                transition
+                easy-in-out
+                duration-300
+                transform
+                hover:scale-110
               "
             >
               <svg
