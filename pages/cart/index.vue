@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="col-span-2 mt-8 lg:mt-4">
-          <div class="bg-gray-700 h-auto flex flex-col rounded-md px-4 py-8">
+          <div class="bg-transparent hover:bg-gray-800 h-auto flex flex-col rounded-md px-4 py-8 transition ease-in-out duration-300">
             <h1 class="mx-auto text-2xl justify-self-center text-white font-semibold">Order Summary</h1>
             <div class="flex items-center justify-between">
               <p class="mt-10 text-lg text-white">Order Items:</p>

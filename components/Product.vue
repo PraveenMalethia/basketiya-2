@@ -6,7 +6,7 @@
           card
           flex flex-col
           justify-center
-          p-10
+          p-8
           bg-gray-300
           rounded-lg
           shadow-2xl
@@ -16,7 +16,7 @@
           :to="`/store/${product.id}`"
           class="prod-title">
           <p class="text-2xl uppercase text-gray-900 font-bold">{{product.name}}</p>
-          <p class="uppercase text-sm text-gray-400">
+          <p class="uppercase text-sm text-gray-800">
             The best shoes in the marketplace
           </p>
         </nuxt-link>
@@ -49,6 +49,7 @@
               hover:text-white
               border-2 border-gray-900
               focus:outline-none
+              font-bold
             "
           >
             Add to cart
