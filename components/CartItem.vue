@@ -4,7 +4,6 @@
         flex
         items-center
         justify-between
-        border-gray-800 border
         p-5
         rounded-xl
         hover:bg-gray-700
