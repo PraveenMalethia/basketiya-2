@@ -322,7 +322,7 @@
               class="input-field"
             />
           </div>
-          <button class="btn-success">
+          <button class="btn-success px-8 py-3">
             Track order with id {{ orderId }}
           </button>
           <p class="text-xs text-gray-400 text-opacity-90 mt-3">
