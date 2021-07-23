@@ -39,19 +39,19 @@
       <nav
         class="flex hidden md:block lg:w-2/5 flex-wrap items-center text-base"
       >
-        <nuxt-link to="/" class="mr-5 hover:text-white cursor-pointer">
+        <nuxt-link to="/" class="mr-5 hover:text-white cursor-pointer transition duration-200 ease-in-out">
           Home
         </nuxt-link>
-        <nuxt-link to="/cart" class="mr-5 hover:text-white cursor-pointer">
+        <nuxt-link to="/cart" class="mr-5 hover:text-white cursor-pointer transition duration-200 ease-in-out">
           Cart
         </nuxt-link>
-        <nuxt-link to="/wishlist" class="mr-5 hover:text-white cursor-pointer">
+        <nuxt-link to="/wishlist" class="mr-5 hover:text-white cursor-pointer transition duration-200 ease-in-out">
           Wishlist
         </nuxt-link>
-        <nuxt-link to="/orders" class="mr-5 hover:text-white cursor-pointer">
+        <nuxt-link to="/orders" class="mr-5 hover:text-white cursor-pointer transition duration-200 ease-in-out">
           Orders
         </nuxt-link>
-        <nuxt-link to="/track-order" class="hover:text-white cursor-pointer">
+        <nuxt-link to="/track-order" class="hover:text-white cursor-pointer transition duration-200 ease-in-out">
           Track Order
         </nuxt-link>
       </nav>
