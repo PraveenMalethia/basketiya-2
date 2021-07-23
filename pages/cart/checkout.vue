@@ -1,10 +1,18 @@
 <template>
   <section class="text-gray-400 bg-gray-900 body-font relative">
-    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+    <div
+      class="container
+        mx-auto
+        flex
+        px-5
+        py-24
+        md:flex-row
+        flex-col
+        items-center">
       <div
         class="
-          lg:w-1/3
-          md:w-1/2
+          lg:w-2/3
+          md:w-2/2
           flex flex-col
           md:ml-auto
           w-full
@@ -75,26 +83,7 @@
         </div>
         <button
           class="
-            mt-8
-            text-green-400
-            bg-transparent
-            border-2 border-solid border-green-500
-            hover:bg-green-500
-            hover:text-white
-            active:bg-emerald-600
-            font-bold
-            uppercase
-            px-8
-            py-3
-            rounded-2xl
-            outline-none
-            focus:outline-none
-            mr-1
-            mb-1
-            ease-linear
-            transition-all
-            duration-150
-            text-center
+            btn-success
           "
         >
           Confirm
@@ -105,12 +94,11 @@
       </div>
       <div
         class="
-          lg:w-2/3
-          md:w-1/2
+          lg:w-full
+          md:w-full
           bg-gray-900
           rounded-lg
           overflow-hidden
-          sm:mr-10
           p-10
           flex
           items-end
@@ -118,7 +106,7 @@
           relative
         "
       >
-        <div class="lg:max-w-lg mx-auto my-auto lg:w-full md:w-1/2 w-5/6">
+        <div class="lg:max-w-sm mx-auto my-auto lg:w-full md:w-4/4 w-6/6">
           <img src="/svg/Shopping_app.svg" alt="Checkout">
         </div>
       </div>

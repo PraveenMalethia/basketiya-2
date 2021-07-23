@@ -40,23 +40,9 @@
         <div class="flex justify-center">
           <nuxt-link
             class="
-              text-purple-500
-              bg-transparent
-              border border-solid border-purple-500
-              hover:bg-purple-500
-              hover:text-white
-              font-bold
-              uppercase
-              px-8
-              py-3
-              rounded-full
-              outline-none
-              focus:outline-none
-              mr-1
-              mb-1
-              ease-linear
-              transition-all
-              duration-150
+              btn-primary
+              px-8 py-3
+              mr-1 mb-1
             "
             to="/store"
           >
