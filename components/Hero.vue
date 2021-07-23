@@ -54,7 +54,7 @@
         <img
           alt="hero"
           src="/svg/hero.svg"
-        ></img>
+        />
       </div>
     </div>
   </section>

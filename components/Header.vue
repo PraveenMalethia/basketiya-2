@@ -67,7 +67,7 @@
             alt="profil"
             src="/images/user.jpg"
             @click="profile_dropdown = !profile_dropdown"
-          ></img>
+          />
           <transition name="toast" style="z-index: 1">
             <div
               v-if="profile_dropdown"
@@ -96,9 +96,9 @@
                   duration-300
                 "
               >
-                <p class="text-gray-100 text-lg">
+                <nuxt-link to="/profile" class="text-gray-100 text-lg">
                   Profile
-                </p>
+                </nuxt-link>
               </div>
               <div
                 class="
