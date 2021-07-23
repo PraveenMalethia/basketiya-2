@@ -6,10 +6,9 @@
           <h1 class="title-font font-medium text-3xl text-white">
             Sign Up And Create Account , Start Shopping Online  . . .
           </h1>
-          <p class="leading-relaxed mt-4">
-            Poke slow-carb mixtape knausgaard, typewriter street art gentrify
-            hammock starladder roathse. Craies vegan tousled etsy austin.
-          </p>
+          <div class="lg:max-w-lg lg:w-full md:w-2/2 w-5/6">
+            <img class="pa-5 mt-5 " src="/svg/hero2.svg" alt="">
+          </div>
         </div>
         <div
           class="
@@ -91,7 +90,7 @@
               px-8
             "
           >
-            Button
+            Sign Up
           </button>
           <p class="text-xs mt-3">
             Literally you probably haven't heard of them jean shorts.
