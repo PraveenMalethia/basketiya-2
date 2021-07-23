@@ -109,6 +109,7 @@
           <nuxt-link
             class="
             mt-5
+            px-8 py-3
             btn-success"
             to="/sign-up"
           >

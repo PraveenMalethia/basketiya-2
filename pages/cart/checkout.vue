@@ -84,6 +84,8 @@
         <button
           class="
             btn-success
+            px-8
+            py-3
           "
         >
           Confirm
