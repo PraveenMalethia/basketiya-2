@@ -19,7 +19,7 @@
       <div
         class="absolute top-6 left-4 mr-4 text-white block md:hidden"
         :class="{ 'opacity-0 relative': side_nav }"
-        @click="side_nav = !side_nav"
+        @click="open"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -160,6 +160,11 @@ export default {
   methods: {
     close () {
       this.side_nav = false
+      this.$emit('toogleSideNav', false)
+    },
+    open () {
+      this.side_nav = true
+      this.$emit('toogleSideNav', true)
     }
   }
 }
