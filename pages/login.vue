@@ -98,40 +98,18 @@
           </div>
           <button
             class="
-            text-white
-            bg-purple-600
-            border-0
-            py-2
-            px-6
-            mt-8
-            transition
-            ease-in-out
-            duration-400
-            focus:outline-none
-            hover:bg-purple-800
-            rounded-xl
-            text-lg"
+            py-3
+            px-8
+            mt-5
+            btn-primary"
             @click="submit()"
           >
             Login
           </button>
           <nuxt-link
             class="
-            text-white
-            border-0
-            py-2
-            px-6
             mt-5
-            focus:outline-none
-            hover:bg-green-500
-            rounded-xl
-            transition
-            ease-in-out
-            duration-400
-            border-2
-            border-green-600
-            text-center
-            text-lg"
+            btn-success"
             to="/sign-up"
           >
             Sign Up
@@ -153,7 +131,7 @@
             border-gray-900
             text-center
             text-lg"
-            to="/sign-up"
+            to="/forget-password"
           >
             Forget Password ?
           </nuxt-link>
