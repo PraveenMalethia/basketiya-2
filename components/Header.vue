@@ -83,6 +83,7 @@
               "
             >
               <div
+                @click="$router.push('/profile')"
                 class="
                   py-3
                   px-4
@@ -96,11 +97,12 @@
                   duration-300
                 "
               >
-                <nuxt-link to="/profile" class="text-gray-100 text-lg">
+                <p class="text-gray-100 text-lg">
                   Profile
-                </nuxt-link>
+                </p>
               </div>
               <div
+                @click="$router.push('/orders')"
                 class="
                   py-3
                   px-4
@@ -115,9 +117,9 @@
                   duration-300
                 "
               >
-                <nuxt-link class="text-gray-100 text-lg" to="/orders">
+                <p class="text-gray-100 text-lg" to="/orders">
                   Orders
-                </nuxt-link>
+                </p>
               </div>
               <div
                 class="
