@@ -111,7 +111,7 @@
               md:justify-start
             "
           >
-            <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+            <div class="relative w-full sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
               <label
                 for="footer-field"
                 class="leading-7 text-sm text-gray-400"
@@ -120,11 +120,12 @@
               </label>
               <input
                 id="footer-field"
-                type="text"
+                type="email"
                 name="footer-field"
                 class="
                   input-field
                 "
+                required
               />
             </div>
             <button
@@ -132,6 +133,7 @@
                 btn-primary
                 px-3
                 py-2
+                mt-3
               "
             >
               Subscribe

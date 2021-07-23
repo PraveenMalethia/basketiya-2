@@ -38,22 +38,7 @@
               type="text"
               name="full-name"
               class="
-                w-full
-                bg-gray-600 bg-opacity-20
-                focus:bg-transparent
-                focus:ring-2 focus:ring-purple-900
-                rounded
-                border border-gray-600
-                focus:border-purple-500
-                text-base
-                outline-none
-                text-gray-100
-                py-1
-                px-3
-                leading-8
-                transition-colors
-                duration-200
-                ease-in-out
+                input-field
               "
             />
           </div>
@@ -67,36 +52,43 @@
               type="email"
               name="email"
               class="
-                w-full
-                bg-gray-600 bg-opacity-20
-                focus:bg-transparent
-                focus:ring-2 focus:ring-purple-900
-                rounded
-                border border-gray-600
-                focus:border-purple-500
-                text-base
-                outline-none
-                text-gray-100
-                py-1
-                px-3
-                leading-8
-                transition-colors
-                duration-200
-                ease-in-out
+                input-field
+              "
+            />
+          </div>
+          <div class="relative mb-4">
+            <label
+              for="email"
+              class="leading-7 text-sm text-gray-400"
+            >Password</label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              class="
+                input-field
+              "
+            />
+          </div>
+          <div class="relative mb-4">
+            <label
+              for="email"
+              class="leading-7 text-sm text-gray-400"
+            >Confirm Password</label>
+            <input
+              id="confirmpassword"
+              type="confirmpassword"
+              name="confirmpassword"
+              class="
+                input-field
               "
             />
           </div>
           <button
             class="
-              text-white
-              bg-purple-500
-              border-0
+              btn-primary
               py-2
               px-8
-              focus:outline-none
-              hover:bg-purple-600
-              rounded
-              text-lg
             "
           >
             Button

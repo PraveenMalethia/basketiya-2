@@ -29,16 +29,17 @@
           fingerstache pitchfork.
         </p>
         <div class="flex justify-center">
-          <button
+          <nuxt-link
             class="
               inline-flex
               py-3
               px-8
               btn-primary
             "
+            to="/profile/edit-profile"
           >
             Edit Profile
-          </button>
+          </nuxt-link>
           <button
             class="
               ml-5

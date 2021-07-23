@@ -24,7 +24,7 @@
               transition
               duration-300
               easy-in-out
-              transform hover:-translate-x-2 hover:scale-100
+              transform hover:-translate-y-2 hover:scale-100
             "
           >
             <img
