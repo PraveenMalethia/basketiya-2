@@ -115,9 +115,9 @@
                   duration-300
                 "
               >
-                <p class="text-gray-100 text-lg">
+                <nuxt-link class="text-gray-100 text-lg" to="/orders">
                   Orders
-                </p>
+                </nuxt-link>
               </div>
               <div
                 class="
