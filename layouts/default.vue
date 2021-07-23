@@ -11,4 +11,7 @@ export default {}
 </script>
 
 <style>
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 </style>
