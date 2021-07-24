@@ -11,7 +11,9 @@
         </p>
       </div>
       <div v-for="i in 10" :key="i" class="flex flex-wrap -m-2">
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <nuxt-link
+          :to="`/orders/${i}`"
+          class="p-2 w-full items-center justify-center">
           <div
             class="
               h-full
@@ -47,7 +49,7 @@
               <p class="text-green-300">Delivered</p>
             </div>
           </div>
-        </div>
+        </nuxt-link>
       </div>
     </div>
   </section>
