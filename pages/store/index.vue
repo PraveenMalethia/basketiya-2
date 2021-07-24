@@ -9,7 +9,11 @@
       </div>
     </div>
     <div class="flex items-center justify-center">
-      <button @click="loadMore()" class="btn-secondary px-5 py-3">{{ loading ? "Loading . . ." : "Load More" }}</button>
+      <button
+        @click="loadMore()"
+        class="btn-secondary px-5 py-3">
+        {{ loading ? "Loading . . ." : "Load More" }}
+      </button>
     </div>
   </section>
 </template>

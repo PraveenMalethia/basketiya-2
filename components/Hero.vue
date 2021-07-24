@@ -43,6 +43,7 @@
               btn-primary
               px-8 py-3
               mr-1 mb-1
+              animate-bounce
             "
             to="/store"
           >
