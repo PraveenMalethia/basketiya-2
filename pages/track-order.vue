@@ -1,6 +1,15 @@
 <template>
   <section class="text-gray-400 bg-gray-900 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="container px-5 py-16 mx-auto flex flex-wrap">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+          Track Your Order
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Here you can track your order .<br>
+          <b>Enter order id and get details.</b>
+        </p>
+      </div>
       <div class="flex flex-wrap w-full">
         <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
           <div class="flex relative pb-12">

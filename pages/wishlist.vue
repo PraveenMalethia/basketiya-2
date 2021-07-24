@@ -1,6 +1,15 @@
 <template>
   <section class="text-gray-400 bg-gray-900 body-font">
-    <div class="container px-5 py-24 mx-auto">
+    <div class="container px-5 py-16 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+          Your Wishlist
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Here you can track your order .<br>
+          <b>Enter order id and get details.</b>
+        </p>
+      </div>
       <div class="flex flex-wrap -m-4">
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a class="block relative h-48 rounded overflow-hidden">

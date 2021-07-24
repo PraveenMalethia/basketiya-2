@@ -1,6 +1,6 @@
 <template>
   <section class="text-gray-400 bg-gray-900 body-font">
-    <div class="flex flex-col text-center w-full mb-1">
+    <div class="flex flex-col text-center w-full py-16">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
           Your Cart
         </h1>
@@ -13,8 +13,6 @@
       class="container
         mx-auto
         flex
-        px-5
-        py-24
         md:flex-row
         flex-col
         items-center
