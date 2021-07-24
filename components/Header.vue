@@ -83,7 +83,10 @@
               "
             >
               <div
-                @click="$router.push('/profile')"
+                @click="()=>{
+                  $router.push('/profile')
+                  profile_dropdown = false
+                }"
                 class="
                   py-3
                   px-4
@@ -102,7 +105,10 @@
                 </p>
               </div>
               <div
-                @click="$router.push('/orders')"
+                @click="()=>{
+                  $router.push('/orders')
+                  profile_dropdown = false
+                }"
                 class="
                   py-3
                   px-4
