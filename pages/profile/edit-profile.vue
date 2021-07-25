@@ -21,7 +21,7 @@
           md:mt-0
         "
       >
-        <h2 class="text-white text-lg mb-1 font-medium title-font mb-5">Edit Profile</h2>
+        <h2 class="text-white text-lg font-medium title-font mb-5">Edit Profile</h2>
         <div class="relative mb-4">
           <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
           <input
@@ -67,7 +67,7 @@
               >Avatar</label
             >
           <input @change="onFileSelected" type="file" id="upload-file" hidden name="upload-file">
-          <label for="upload-file" refs="upload-file" class="block flex items-center space-x-4 mb-6 mt-4 bg-gray-800 border border-gray-700 px-4 w-auto py-2 text-gray-200 rounded-xl">
+          <label for="upload-file" refs="upload-file" class="flex items-center space-x-4 mb-6 mt-4 bg-gray-800 border border-gray-700 px-4 w-auto py-2 text-gray-200 rounded-xl">
             <span class="border-r-2 border-gray-500 pr-4">Choose a file</span>
             <span class="text-sm" v-if="selectedFileName">
               {{ selectedFileName }}
