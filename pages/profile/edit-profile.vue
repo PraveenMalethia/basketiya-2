@@ -69,7 +69,7 @@
             class="leading-7 text-sm text-gray-400"
               >Avatar</label
             ><br>
-            <a target="_blank" href="http://localhost:3000/images/profile.png">Current Image : <span class="text-blue-500">{{ current_image }}</span></a>
+            <a target="_blank" :href="'http://localhost:3000'+user.image">Current Image : <span class="text-blue-500">{{ user.image }}</span></a>
           <input @change="onFileSelected" type="file" id="upload-file" hidden name="upload-file">
           <label for="upload-file" refs="upload-file" class="flex items-center space-x-4 mb-6 mt-4 bg-gray-800 border border-gray-700 px-4 w-auto py-2 text-gray-200 rounded-xl">
             <span class="border-r-2 border-gray-500 pr-4">Choose a file</span>
@@ -117,11 +117,11 @@
 export default {
   data () {
     return {
-      current_image: 'Profile.png',
       selectedFileName: null,
       user: {
-        name: 'Praveen Malethia',
-        username: 'Praveen',
+        image: '/images/profile.png',
+        name: 'Srikar Kandula ',
+        username: 'Sriks.k',
         bio: 'Backend dev with some python and javascript skills.'
       }
     }
