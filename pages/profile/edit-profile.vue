@@ -83,11 +83,11 @@
         </div>
         <button
           class="
-            btn-primary
+            btn-success
             py-3
           "
         >
-          Confirm
+          Update
         </button>
       </div>
       <div
