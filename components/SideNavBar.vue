@@ -12,20 +12,20 @@
     >
       <path fill="#222831" d="M13.723 2.286l-13.723 13.714 13.719 13.714 1.616-1.611-10.96-10.96h27.625v-2.286h-27.625l10.965-10.965-1.616-1.607z"></path>
     </svg>
-    <div @click="close" class="flex flex-col mt-10 space-y-4">
+    <div @click="close" class="flex flex-col mt-12 space-y-4">
       <nuxt-link
         to="/"
         @click="close"
-        class="text-xl font-semibold hover:bg-gray-700 p-2 pl-4 rounded-l-xl transition duration-300 easy-in-out"
-        :class="{'bg-gradient-to-l from-gray-700 text-indigo-600 border-r-2 border-indigo-600':getCurrentUrl == '/'}"
+        class="text-xl font-semibold hover:bg-gray-700 p-4 pl-4 rounded-l-xl transition duration-300 easy-in-out"
+        :class="{'bg-gradient-to-l from-gray-700 text-white border-r-2 border-indigo-600':getCurrentUrl == '/'}"
         >
         Home
       </nuxt-link>
       <nuxt-link
         to="/cart"
         @click="close"
-        class="text-xl font-semibold hover:bg-gray-700 p-2 pl-4 track-order rounded-l-xl transition duration-300 easy-in-out"
-        :class="{'bg-gradient-to-l from-gray-700 text-indigo-600 border-r-2 border-indigo-600':getCurrentUrl == '/cart'}"
+        class="text-xl font-semibold hover:bg-gray-700 p-4 pl-4 track-order rounded-l-xl transition duration-300 easy-in-out"
+        :class="{'bg-gradient-to-l from-gray-700 text-white border-r-2 border-indigo-600':getCurrentUrl == '/cart'}"
 
         >
         Cart
@@ -33,8 +33,8 @@
       <nuxt-link
         to="/orders"
         @click="close"
-        class="text-xl font-semibold hover:bg-gray-700 p-2 pl-4 rounded-l-xl transition duration-300 easy-in-out"
-        :class="{'bg-gradient-to-l from-gray-700 text-indigo-600 border-r-2 border-indigo-600':getCurrentUrl == '/orders'}"
+        class="text-xl font-semibold hover:bg-gray-700 p-4 pl-4 rounded-l-xl transition duration-300 easy-in-out"
+        :class="{'bg-gradient-to-l from-gray-700 text-white border-r-2 border-indigo-600':getCurrentUrl == '/orders'}"
 
         >
         Orders
@@ -42,8 +42,8 @@
       <nuxt-link
         to="/track-order"
         @click="close"
-        class="text-xl font-semibold hover:bg-gray-700 p-2 pl-4 rounded-l-xl transition duration-300 easy-in-out"
-        :class="{'bg-gradient-to-l from-gray-700 text-indigo-600 border-r-2 border-indigo-600':getCurrentUrl == '/track-order'}"
+        class="text-xl font-semibold hover:bg-gray-700 p-4 pl-4 rounded-l-xl transition duration-300 easy-in-out"
+        :class="{'bg-gradient-to-l from-gray-700 text-white border-r-2 border-indigo-600':getCurrentUrl == '/track-order'}"
 
         >
         Track Order
