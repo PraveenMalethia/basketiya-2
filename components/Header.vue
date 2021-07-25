@@ -73,7 +73,7 @@
               v-if="profile_dropdown"
               class="
                 bg-gray-700
-                mt-2
+                mt-7
                 absolute
                 right-7
                 z-20
