@@ -12,7 +12,7 @@
         easy-in-out
         transform hover:-translate-y-2 hover:scale-100">
         <div class="p-1 w-2/4 md:w-1/5 flex-none overflow-hidden">
-          <img src="/images/product2.jpg" class="w-full md:h-32 flex-none rounded-xl md:rounded-2xl object-cover object-center">
+          <img :src="`/images/product${number}.jpg`" class="w-full md:h-32 flex-none rounded-xl md:rounded-2xl object-cover object-center">
         </div>
         <div class="flex flex-col items-center md:flex-row md:justify-between space-y-2 md:w-5/6 ml-2 h-full md:space-x-4">
           <h3 class="sm:text-lg md:text-2xl text-center w-full md:w-1/6 font-semibold text-white">Nike Shoe</h3>
@@ -51,7 +51,12 @@
 
 <script>
 export default {
-
+  props: {
+    number: {
+      type: Number,
+      required: true
+    }
+  }
 }
 </script>
 

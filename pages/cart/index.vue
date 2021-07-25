@@ -22,7 +22,7 @@
         <div class="col-span-4">
           <div class="flex flex-col space-y-2">
             <div v-for="i in 3" :key="i" class="py-2 px-2">
-              <CartItem />
+              <CartItem :number="i"/>
             </div>
           </div>
         </div>
