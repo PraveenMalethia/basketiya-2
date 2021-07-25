@@ -21,13 +21,7 @@
       <div class="lg:grid lg:gap-3 lg:grid-cols-6 lg:flex-row space-x-4">
         <div class="col-span-4">
           <div class="flex flex-col space-y-2">
-            <div class="py-2">
-              <CartItem />
-            </div>
-            <div class="py-2">
-              <CartItem />
-            </div>
-            <div class="py-2">
+            <div v-for="i in 3" :key="i" class="py-2 px-2">
               <CartItem />
             </div>
           </div>
