@@ -22,16 +22,18 @@
         @click="open"
       >
         <svg
-          class="text-white rounded-md"
-          version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="w-8 h-8 text-white p-1 rounded"
+          viewBox="0 0 30 30"
         >
-          <path  class="text-white" fill="#222831" d="M0 4.656h32v2.226h-32v-2.226z"></path>
-          <path  class="text-white" fill="#222831" d="M0 14.869h32v2.226h-32v-2.226z"></path>
-          <path  class="text-white" fill="#222831" d="M0 25.119h32v2.226h-32v-2.226z"></path>
+          <path fill="#222831" d="M0 4.656h32v2.226h-32v-2.226z"></path>
+          <path fill="#222831" d="M0 14.869h32v2.226h-32v-2.226z"></path>
+          <path fill="#222831" d="M0 25.119h32v2.226h-32v-2.226z"></path>
         </svg>
       </div>
       <nav

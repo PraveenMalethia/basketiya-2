@@ -7,7 +7,7 @@
       stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="2"
+      stroke-width="3"
       viewBox="0 0 32 32"
     >
       <path fill="#222831" d="M13.723 2.286l-13.723 13.714 13.719 13.714 1.616-1.611-10.96-10.96h27.625v-2.286h-27.625l10.965-10.965-1.616-1.607z"></path>
