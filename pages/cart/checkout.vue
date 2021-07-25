@@ -37,6 +37,17 @@
           />
         </div>
         <div class="relative mb-4">
+          <label for="phone" class="leading-7 text-sm text-gray-400">Phone Number</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            class="
+              input-field
+            "
+          />
+        </div>
+        <div class="relative mb-4">
           <label
           for="email"
           class="leading-7 text-sm text-gray-400"
