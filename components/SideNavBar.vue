@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen min-w-max text-white z-40 pl-8 px-4 py-14 bg-gray-800 fixed top-0 left-0 right-0 bottom-0 block">
     <svg
-      class="absolute top-6 left-2/4 w-8 h-8"
+      class="absolute top-7 left w-6 h-8"
       @click="close"
       fill="none"
       stroke="currentColor"
