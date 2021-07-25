@@ -1,5 +1,5 @@
 <template>
-  <header class="opacity-95 sticky top-0 z-50 text-gray-400 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 body-font ">
+  <header class="backdrop-filter backdrop-blur-md border-b border-gray-700 bg-opacity-90 sticky top-0 z-50 text-gray-400 bg-gray-900">
     <transition name="sidenav" class="z-40 fixed top-0 left-0 right-5 bottom-0">
       <div v-if="side_nav">
         <SideNavBar @close="close" />
