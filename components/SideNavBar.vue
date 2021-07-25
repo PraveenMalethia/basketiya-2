@@ -8,11 +8,11 @@
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="2"
-      viewBox="0 0 24 24"
+      viewBox="0 0 32 32"
     >
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+      <path fill="#222831" d="M13.723 2.286l-13.723 13.714 13.719 13.714 1.616-1.611-10.96-10.96h27.625v-2.286h-27.625l10.965-10.965-1.616-1.607z"></path>
     </svg>
-    <div @click="close" class="flex flex-col mt-5 space-y-4">
+    <div @click="close" class="flex flex-col mt-10 space-y-4">
       <nuxt-link
         to="/"
         @click="close"

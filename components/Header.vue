@@ -22,18 +22,16 @@
         @click="open"
       >
         <svg
+          class="text-white rounded-md"
+          version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          class="w-8 h-8 text-white p-2 bg-purple-500 rounded-full"
-          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
         >
-          <path
-            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-          />
+          <path  class="text-white" fill="#222831" d="M0 4.656h32v2.226h-32v-2.226z"></path>
+          <path  class="text-white" fill="#222831" d="M0 14.869h32v2.226h-32v-2.226z"></path>
+          <path  class="text-white" fill="#222831" d="M0 25.119h32v2.226h-32v-2.226z"></path>
         </svg>
       </div>
       <nav
@@ -74,8 +72,10 @@
               class="
                 bg-gray-700
                 mt-7
+                backdrop-filter
+                backdrop-blur-md
                 absolute
-                right-7
+                right-4
                 z-20
                 rounded-md
                 px-2
