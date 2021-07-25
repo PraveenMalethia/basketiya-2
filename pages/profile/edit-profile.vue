@@ -70,7 +70,13 @@
               >Avatar</label
             ><br>
             <a target="_blank" :href="'http://localhost:3000'+user.image">Current Image : <span class="text-blue-500">{{ user.image }}</span></a>
-          <input @change="onFileSelected" type="file" id="upload-file" hidden name="upload-file">
+          <input
+            id="upload-file"
+            @change="onFileSelected"
+            type="file"
+            hidden
+            name="upload-file"
+            accept="image/png, image/jpeg">
           <label for="upload-file" refs="upload-file" class="flex items-center space-x-4 mb-6 mt-4 bg-gray-800 border border-gray-700 px-4 w-auto py-2 text-gray-200 rounded-xl">
             <span class="border-r-2 border-gray-500 pr-4">Choose a file</span>
             <span class="text-sm" v-if="selectedFileName">
