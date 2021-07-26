@@ -2,8 +2,8 @@
   <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
     <div class="container px-5 py-24 mx-auto">
       <div class="lg:w-4/5 mx-auto flex flex-wrap">
-        <div class="w-full lg:w-1/2">
-          <Carousel class="relative h-64 lg:h-full overflow-hidden w-full z-10">
+        <div class="w-full flex items-center justify-center lg:w-1/2">
+          <Carousel class="relative h-64 lg:h-full md:w-1/3 sm:w-2/3 overflow-hidden lg:w-full w-full z-10">
             <CarouselSlide v-for="(image,index) in product.imgs" :key="image" :index="index" class="absolute top-0 bottom-0 left-0 right-0">
               <img
                 alt="ecommerce"
