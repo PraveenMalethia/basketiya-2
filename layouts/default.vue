@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-gray-900">
     <Header v-on:toogleSideNav="toogleSideNav"/>
     <div v-if="!showSideNav">
       <Nuxt />
