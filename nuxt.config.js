@@ -98,5 +98,6 @@ export default {
 
   router: {
     // middleware: ["auth"]
+    linkExactActiveClass: 'border-b-4 rounded-md py-2'
   }
 };
