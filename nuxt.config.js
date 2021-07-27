@@ -40,7 +40,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: development  ? 'http://127.0.0.1:8000' : 'https://basketiyaapi.herokuapp.com',
+    baseURL: development  ? 'http://127.0.0.1:8000' : 'https://basketiya-api.herokuapp.com/',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
