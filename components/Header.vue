@@ -130,6 +130,7 @@
                 </p>
               </div>
               <div
+              @click="logout()"
                 class="
                   py-3
                   px-4
@@ -173,6 +174,10 @@ export default {
     open () {
       this.side_nav = true
       this.$emit('toogleSideNav', true)
+    },
+    async logout () {
+      await this.$auth.logout()
+      await this.$router.push('/login')
     }
   }
 }

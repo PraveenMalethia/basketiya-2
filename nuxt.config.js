@@ -1,3 +1,4 @@
+let development = process.env.NODE_ENV !== 'production'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -39,7 +40,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://basketiyaapi.herokuapp.com',
+    baseURL: development  ? 'http://127.0.0.1:8000' : 'https://basketiyaapi.herokuapp.com',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -100,7 +101,7 @@ export default {
   },
 
   router: {
-    // middleware: ["auth"]
+    middleware: ["auth"],
     linkExactActiveClass: 'border-b-4 rounded-md py-2'
   }
 };

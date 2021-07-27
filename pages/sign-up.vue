@@ -31,11 +31,12 @@
             <label
               for="full-name"
               class="leading-7 text-sm text-gray-400"
-            >Full Name</label>
+            >username</label>
             <input
-              id="full-name"
+              v-model="username"
+              id="username"
               type="text"
-              name="full-name"
+              name="username"
               class="
                 input-field
               "
@@ -47,6 +48,7 @@
               class="leading-7 text-sm text-gray-400"
             >Email</label>
             <input
+              v-model="email"
               id="email"
               type="email"
               name="email"
@@ -61,6 +63,7 @@
               class="leading-7 text-sm text-gray-400"
             >Password</label>
             <input
+              v-model="password1"
               id="password"
               type="password"
               name="password"
@@ -75,8 +78,9 @@
               class="leading-7 text-sm text-gray-400"
             >Confirm Password</label>
             <input
+              v-model="password2"
               id="confirmpassword"
-              type="confirmpassword"
+              type="password"
               name="confirmpassword"
               class="
                 input-field
@@ -89,6 +93,7 @@
               py-2
               px-8
             "
+            @click="signUp"
           >
             Sign Up
           </button>
@@ -103,6 +108,8 @@
 
 <script>
 export default {
+  layout: 'auth',
+  auth: false,
   head: {
     title: 'Basketiya | Sig Up',
     meta: [
@@ -114,6 +121,56 @@ export default {
         content: 'Basketiya | Create your account on basketiya. '
       }
     ]
+  },
+  data: () => {
+    return {
+      username: '',
+      password1: '',
+      password2: '',
+      email: ''
+    }
+  },
+  methods: {
+    signUp () {
+      if (this.password1 !== this.password2) {
+        alert('Passwords do not match')
+        return
+      }
+      if (this.username === '') {
+        alert('Username cannot be empty')
+        return
+      }
+      if (this.email === '') {
+        alert('Email cannot be empty')
+        return
+      }
+      if (this.password1 === '') {
+        alert('Password cannot be empty')
+        return
+      }
+      if (this.password1.length < 6) {
+        alert('Password must be at least 6 characters')
+        return
+      }
+      this.$axios.post('/api/auth/registration/', {
+        username: this.username,
+        password1: this.password1,
+        password2: this.password2,
+        email: this.email
+      })
+        .then((response) => {
+          console.log(response)
+          if (response.status === 201) {
+            alert('Successfully created account')
+            this.$router.push('/login')
+          } else {
+            alert(response.data.message)
+          }
+        })
+        .catch((error) => {
+          alert(error.response.data.message)
+        })
+    }
   }
 }
 </script>

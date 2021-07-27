@@ -19,7 +19,7 @@
       />
       <div class="text-center lg:w-2/3 w-full">
         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-          Praveen Malethia
+          {{ $auth.user.username }}
         </h1>
         <p class="leading-relaxed mb-8">
           Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing
