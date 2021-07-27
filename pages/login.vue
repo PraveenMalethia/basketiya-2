@@ -96,6 +96,10 @@
                 ease-in-out"
             />
           </div>
+          <p>demo account<br>
+            <code>username : test</code><br>
+            <code>password : test@123</code>
+          </p>
           <button
             class="
             py-3
