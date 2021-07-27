@@ -40,7 +40,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: development  ? 'http://127.0.0.1:8000' : 'https://basketiya-api.herokuapp.com/',
+    baseURL: development  ? 'http://127.0.0.1:8000' : 'https://basketiya-api.herokuapp.com',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -62,19 +62,19 @@ export default {
         scheme: "refresh",
         endpoints: {
           login: {
-            url: "http://127.0.0.1:8000/api/auth/login/",
+            url: development  ? 'http://127.0.0.1:8000/api/auth/login/' : 'https://basketiya-api.herokuapp.com/api/auth/login/',
             method: "POST"
           },
           refresh: {
-            url: "http://127.0.0.1:8000/api/auth/token/refresh/",
+            url: development  ? 'http://127.0.0.1:8000/api/auth/token/refresh/' : 'https://basketiya-api.herokuapp.com/api/auth/token/refresh/',
             method: "post"
           },
           logout: {
-            url: "http://127.0.0.1:8000/api/auth/logout/",
+            url: development  ? 'http://127.0.0.1:8000/api/auth/logout/' : 'https://basketiya-api.herokuapp.com/api/auth/logout/',
             method: "GET"
           },
           user: {
-            url: "http://127.0.0.1:8000/api/auth/user/",
+            url: development  ? "http://127.0.0.1:8000/api/auth/user/" : 'https://basketiya-api.herokuapp.com/api/auth/user/',
             method: "GET"
           }
         },
