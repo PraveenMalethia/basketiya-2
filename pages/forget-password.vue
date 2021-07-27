@@ -26,10 +26,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Basketiya | Reset your password here. ',
-      },
-    ],
-  },
+        content: 'Basketiya | Reset your password here. '
+      }
+    ]
+  }
 }
 </script>
 

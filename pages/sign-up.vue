@@ -111,10 +111,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Basketiya | Create your account on basketiya. ',
-      },
-    ],
-  },
+        content: 'Basketiya | Create your account on basketiya. '
+      }
+    ]
+  }
 }
 </script>
 

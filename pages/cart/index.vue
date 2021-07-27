@@ -78,10 +78,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Basketiya | See your cart here ',
-      },
-    ],
-  },
+        content: 'Basketiya | See your cart here '
+      }
+    ]
+  }
 }
 </script>
 

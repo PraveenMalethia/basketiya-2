@@ -64,10 +64,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Basketiya | All of your orders ',
-      },
-    ],
-  },
+        content: 'Basketiya | All of your orders '
+      }
+    ]
+  }
 }
 </script>
 

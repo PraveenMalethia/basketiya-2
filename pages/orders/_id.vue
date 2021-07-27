@@ -435,10 +435,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Basketiya | Order details ',
-      },
-    ],
-  },
+        content: 'Basketiya | Order details '
+      }
+    ]
+  }
 }
 </script>
 

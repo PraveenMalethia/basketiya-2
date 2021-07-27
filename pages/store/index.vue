@@ -36,9 +36,9 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Basketiya | Store page. ',
-      },
-    ],
+        content: 'Basketiya | Store page. '
+      }
+    ]
   },
   data: () => {
     return {

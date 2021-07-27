@@ -166,10 +166,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Basketiya | All of the products that you have wished for.',
-      },
-    ],
-  },
+        content: 'Basketiya | All of the products that you have wished for.'
+      }
+    ]
+  }
 }
 </script>
 

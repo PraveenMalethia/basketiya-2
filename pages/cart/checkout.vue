@@ -137,10 +137,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Basketiya | Checkout to confirm order and items in cart. ',
-      },
-    ],
-  },
+        content: 'Basketiya | Checkout to confirm order and items in cart. '
+      }
+    ]
+  }
 }
 </script>
 

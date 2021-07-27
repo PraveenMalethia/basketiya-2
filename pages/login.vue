@@ -152,9 +152,9 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Basketiya | Login to your account. ',
-      },
-    ],
+        content: 'Basketiya | Login to your account.'
+      }
+    ]
   },
   layout: 'auth',
   data: () => ({
@@ -162,18 +162,6 @@ export default {
     password: '',
     show: false
   }),
-  head () {
-    return {
-      title: 'Login',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'My custom description'
-        }
-      ]
-    }
-  },
   methods: {
     async submit () {
       const credentials = {

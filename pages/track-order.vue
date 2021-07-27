@@ -352,9 +352,9 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Basketiya | Track your orders done on basketiya. ',
-      },
-    ],
+        content: 'Basketiya | Track your orders done on basketiya. '
+      }
+    ]
   },
   data: () => {
     return {

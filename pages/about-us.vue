@@ -12,10 +12,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Basketiya | About Basketiya and what it is actually.',
-      },
-    ],
-  },
+        content: 'Basketiya | About Basketiya and what it is actually.'
+      }
+    ]
+  }
 }
 </script>
 

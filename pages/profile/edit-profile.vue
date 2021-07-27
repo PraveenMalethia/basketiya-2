@@ -129,9 +129,9 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Basketiya | Edit or update your profile . ',
-      },
-    ],
+        content: 'Basketiya | Edit or update your profile . '
+      }
+    ]
   },
   data () {
     return {

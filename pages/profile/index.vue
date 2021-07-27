@@ -66,10 +66,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Basketiya | Your Profile ',
-      },
-    ],
-  },
+        content: 'Basketiya | Your Profile '
+      }
+    ]
+  }
 }
 </script>
 
