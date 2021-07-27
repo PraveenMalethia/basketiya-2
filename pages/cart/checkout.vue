@@ -128,7 +128,20 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head: {
+    title: 'Basketiya | Checkout',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Basketiya | Checkout to confirm order and items in cart. ',
+      },
+    ],
+  },
+}
 </script>
 
 <style>

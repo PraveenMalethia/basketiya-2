@@ -121,6 +121,18 @@
 <script>
 
 export default {
+  head: {
+    title: 'Basketiya | Edit Profile',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Basketiya | Edit or update your profile . ',
+      },
+    ],
+  },
   data () {
     return {
       selectedFileName: null,

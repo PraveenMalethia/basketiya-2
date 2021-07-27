@@ -102,7 +102,20 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head: {
+    title: 'Basketiya | Sig Up',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Basketiya | Create your account on basketiya. ',
+      },
+    ],
+  },
+}
 </script>
 
 <style>
