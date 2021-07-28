@@ -122,7 +122,10 @@
           <p class="text-center mt-4">Or</p>
           <nuxt-link
             class="
-            text-white
+            uppercase
+            font-bold
+            text-black
+            hover:text-white
             py-2
             px-6
             mt-5
@@ -133,9 +136,9 @@
             ease-in-out
             duration-400
             border-2
-            border-gray-900
+            border-gray-300
             text-center
-            text-lg"
+            bg-gray-300"
             to="/forget-password"
           >
             Forget Password ?
