@@ -95,6 +95,12 @@
         >
           Update
         </button>
+        <nuxt-link
+          to="/reset-password"
+          class="btn-secondary py-3 px-3 mt-3"
+        >
+          change Password
+        </nuxt-link>
       </div>
       <div
         class="

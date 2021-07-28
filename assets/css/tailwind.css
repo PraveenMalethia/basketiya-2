@@ -13,7 +13,7 @@
 }
 
 .btn-secondary {
-  @apply text-gray-200 hover:text-gray-800 bg-transparent border-2 border-solid border-gray-200 hover:bg-gray-200 font-bold uppercase rounded-full outline-none focus:outline-none transition-all duration-150
+  @apply text-gray-200 hover:text-gray-800 text-center bg-transparent border-2 border-solid border-gray-200 hover:bg-gray-200 font-bold uppercase rounded-2xl outline-none focus:outline-none transition-all duration-150
 }
 
 .btn-success {
