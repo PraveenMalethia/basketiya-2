@@ -18,6 +18,8 @@
 
 <script>
 export default {
+  layout: 'auth',
+  auth: false,
   head: {
     title: 'Basketiya | Forget Password',
     meta: [
