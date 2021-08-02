@@ -31,12 +31,15 @@ export default {
       }
     ]
   },
-  data: () => {
-    return {}
+  async fetch () {
+    await this.$axios.get('https://fakestoreapi.com/products?limit=20')
+      .then((response) => {
+        this.products = response.data
+      })
   },
-  computed: {
-    products () {
-      return this.$store.state.store.products
+  data: () => {
+    return {
+      products: []
     }
   }
 }
