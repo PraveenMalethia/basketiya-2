@@ -40,14 +40,16 @@ export default {
       }
     ]
   },
+  async fetch () {
+    await this.$axios.get('https://fakestoreapi.com/products?limit=20')
+      .then((response) => {
+        this.products = response.data
+      })
+  },
   data: () => {
     return {
-      loading: false
-    }
-  },
-  computed: {
-    products () {
-      return this.$store.state.store.products
+      loading: false,
+      products: []
     }
   },
   methods: {

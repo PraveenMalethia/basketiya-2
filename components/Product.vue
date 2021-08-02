@@ -1,6 +1,6 @@
 <template>
   <div class="w-80 flex justify-center items-center transform hover:scale-105 transition duration-400 ease-in-out">
-    <div class="w-full p-4">
+    <div class="w-full p-4 h-full">
       <div
         class="
           card
@@ -15,7 +15,7 @@
         <nuxt-link
           :to="`/store/${product.id}`"
           class="prod-title">
-          <p class="text-2xl uppercase text-gray-900 font-bold">{{product.name}}</p>
+          <p class="text-2xl uppercase text-gray-900 font-bold">{{product.category}}</p>
           <p class="uppercase text-sm text-gray-800">
             The best shoes in the marketplace
           </p>
@@ -23,7 +23,7 @@
         <nuxt-link
           :to="`/store/${product.id}`"
           class="prod-img">
-          <img :src="product.img" class="w-full object-cover object-center" />
+          <img :src="product.image" class="w-full object-cover object-center" />
         </nuxt-link>
         <div
           class="
