@@ -4,7 +4,7 @@
       <div class="lg:w-4/5 mx-auto flex flex-wrap">
         <div class="w-full flex items-center justify-center lg:w-1/2">
           <Carousel class="relative h-64 lg:h-full md:w-1/3 sm:w-2/3 overflow-hidden lg:w-full w-full z-10">
-            <CarouselSlide v-for="(image,index) in product.imgs" :key="image" :index="index" class="absolute top-0 bottom-0 left-0 right-0">
+            <CarouselSlide v-for="(image,index) in product.image" :key="image" :index="index" class="absolute top-0 bottom-0 left-0 right-0">
               <img
                 alt="ecommerce"
                 class="
@@ -154,11 +154,7 @@
             </span>
           </div>
           <p class="leading-relaxed">
-            Fam locavore kickstarter distillery. Mixtape chillwave tumeric
-            sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo
-            juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
-            seitan poutine tumeric. Gastropub blue bottle austin listicle
-            pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.
+            {{ product.description }}
           </p>
           <div
             class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"
@@ -262,7 +258,7 @@
           >
             <span
               class="title-font font-medium text-2xl text-white"
-            >$58.00</span>
+            >₹ {{ product.price }}</span>
             <button
               class="
               text-purple-500
@@ -348,7 +344,10 @@ export default {
   },
   mounted () {
     const id = this.$route.params.slug
-    this.product = this.$store.state.store.products.filter(p => p.id === parseInt(id))[0]
+    this.product = this.$axios.get('https://fakestoreapi.com/products/' + id)
+      .then((response) => {
+        this.product = response.data
+      })
   }
 }
 </script>
