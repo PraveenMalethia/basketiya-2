@@ -13,7 +13,7 @@
           <div
             class="h-full w-6 absolute inset-0 flex items-center justify-center"
           >
-            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            <div class="h-full w-1 bg-gray-800 pointer-events-none" />
           </div>
           <div
             class="
@@ -71,7 +71,7 @@
                 class="w-12 h-12"
                 viewBox="0 0 24 24"
               >
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -89,7 +89,7 @@
           <div
             class="h-full w-6 absolute inset-0 flex items-center justify-center"
           >
-            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            <div class="h-full w-1 bg-gray-800 pointer-events-none" />
           </div>
           <div
             class="
@@ -147,7 +147,7 @@
                 class="w-12 h-12"
                 viewBox="0 0 24 24"
               >
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
               </svg>
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -165,7 +165,7 @@
           <div
             class="h-full w-6 absolute inset-0 flex items-center justify-center"
           >
-            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            <div class="h-full w-1 bg-gray-800 pointer-events-none" />
           </div>
           <div
             class="
@@ -223,8 +223,8 @@
                 class="w-12 h-12"
                 viewBox="0 0 24 24"
               >
-                <circle cx="12" cy="5" r="3"></circle>
-                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                <circle cx="12" cy="5" r="3" />
+                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3" />
               </svg>
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -242,7 +242,7 @@
           <div
             class="h-full w-6 absolute inset-0 flex items-center justify-center"
           >
-            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            <div class="h-full w-1 bg-gray-800 pointer-events-none" />
           </div>
           <div
             class="
@@ -300,8 +300,8 @@
                 class="w-12 h-12"
                 viewBox="0 0 24 24"
               >
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
               </svg>
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -396,14 +396,20 @@
                     bg-gray-800
                     rounded-tr rounded-br
                   "
-                ></th>
+                />
               </tr>
             </thead>
             <tbody>
-              <tr  v-for="i in 10" :key="i">
-                <td class="border-t-2 border-gray-800 px-4 py-3">Product {{ i }}</td>
-                <td class="border-t-2 border-gray-800 px-4 py-3">{{ i }}</td>
-                <td class="border-t-2 border-gray-800 px-4 py-3">{{ i }} KG</td>
+              <tr v-for="i in 10" :key="i">
+                <td class="border-t-2 border-gray-800 px-4 py-3">
+                  Product{{ i }}
+                </td>
+                <td class="border-t-2 border-gray-800 px-4 py-3">
+                  {{ i }}
+                </td>
+                <td class="border-t-2 border-gray-800 px-4 py-3">
+                  {{ i }} KG
+                </td>
                 <td
                   class="
                     border-t-2 border-gray-800
@@ -414,8 +420,7 @@
                 >
                   $24
                 </td>
-                <td class="border-t-2 border-gray-800 w-10 text-center">
-                </td>
+                <td class="border-t-2 border-gray-800 w-10 text-center" />
               </tr>
             </tbody>
           </table>

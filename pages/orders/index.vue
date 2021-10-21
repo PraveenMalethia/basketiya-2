@@ -5,15 +5,22 @@
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
           Your Orders
         </h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        <p
+          class="lg:w-2/3 mx-auto leading-relaxed text-base"
+        >
           Here are all of your orders.<br>
           <b>Click Order to see more details</b>
         </p>
       </div>
-      <div v-for="i in 10" :key="i" class="flex flex-wrap -m-2">
+      <div
+        v-for="i in 10"
+        :key="i"
+        class="flex-col flex flex-wrap justify-center content-center"
+      >
         <nuxt-link
           :to="`/orders/${i}`"
-          class="p-2 w-full items-center justify-center">
+          class="p-2 w-1/4 items-center justify-center"
+        >
           <div
             class="
               h-full
@@ -38,15 +45,18 @@
                 object-cover object-center
                 flex-shrink-0
                 rounded-full
-                mr-4
-              "
+                mr-4"
               src="https://dummyimage.com/80x80"
-            />
+            >
             <div class="flex-grow">
               <h2 class="text-white title-font font-medium">
-                Order number {{i}}
+                Order number {{ i }}
               </h2>
-              <p class="text-green-300">Delivered</p>
+              <p
+                class="text-green-300"
+              >
+                Delivered
+              </p>
             </div>
           </div>
         </nuxt-link>
