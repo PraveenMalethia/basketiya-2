@@ -19,6 +19,17 @@
 
 <script>
 export default {
+  data: () => {
+    return {
+      products: []
+    }
+  },
+  async fetch () {
+    await this.$axios.get('https://fakestoreapi.com/products?limit=20')
+      .then((response) => {
+        this.products = response.data
+      })
+  },
   head: {
     title: 'Basketiya | Home',
     meta: [
@@ -30,17 +41,6 @@ export default {
         content: 'Basketiya | Ecommerce Website for CWD.'
       }
     ]
-  },
-  async fetch () {
-    await this.$axios.get('https://fakestoreapi.com/products?limit=20')
-      .then((response) => {
-        this.products = response.data
-      })
-  },
-  data: () => {
-    return {
-      products: []
-    }
   }
 }
 </script>

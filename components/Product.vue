@@ -3,27 +3,28 @@
     <div class="w-full p-4 h-full">
       <div
         class="
-          card
           flex flex-col
           justify-center
           p-8
-          bg-gray-300
+          items-center
+          bg-white
           rounded-lg
-          shadow-2xl
+          flex-grow
         "
       >
         <nuxt-link
           :to="`/store/${product.id}`"
-          class="prod-title">
-          <p class="text-2xl uppercase text-gray-900 font-bold">{{product.category}}</p>
-          <p class="uppercase text-sm text-gray-800">
-            The best shoes in the marketplace
+          class="prod-title"
+        >
+          <p class="text-2xl uppercase text-gray-900 font-bold">
+            {{ product.category }}
           </p>
         </nuxt-link>
         <nuxt-link
           :to="`/store/${product.id}`"
-          class="prod-img">
-          <img :src="product.image" class="w-full object-cover object-center" />
+          class="prod-img"
+        >
+          <img :src="product.image" class="w-full h-50 object-cover object-center">
         </nuxt-link>
         <div
           class="
@@ -35,7 +36,9 @@
             mt-5
           "
         >
-          <p class="font-bold text-xl">65 $</p>
+          <p class="font-bold text-xl">
+            65 $
+          </p>
           <button
             class="
               px-6
@@ -50,6 +53,7 @@
               border-2 border-gray-900
               focus:outline-none
               font-bold
+              ml-5
             "
           >
             Add to cart
