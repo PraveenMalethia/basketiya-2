@@ -31,9 +31,9 @@
           class="w-8 h-8 text-white p-1 rounded"
           viewBox="0 0 30 30"
         >
-          <path fill="#222831" d="M0 4.656h32v2.226h-32v-2.226z"></path>
-          <path fill="#222831" d="M0 14.869h32v2.226h-32v-2.226z"></path>
-          <path fill="#222831" d="M0 25.119h32v2.226h-32v-2.226z"></path>
+          <path fill="#222831" d="M0 4.656h32v2.226h-32v-2.226z" />
+          <path fill="#222831" d="M0 14.869h32v2.226h-32v-2.226z" />
+          <path fill="#222831" d="M0 25.119h32v2.226h-32v-2.226z" />
         </svg>
       </div>
       <nav
@@ -67,7 +67,7 @@
             alt="profil"
             src="/images/user.jpg"
             @click="profile_dropdown = !profile_dropdown"
-          />
+          >
           <transition name="toast" style="z-index: 1">
             <div
               v-if="profile_dropdown"
@@ -85,10 +85,6 @@
               "
             >
               <div
-                @click="()=>{
-                  $router.push('/profile')
-                  profile_dropdown = false
-                }"
                 class="
                   py-3
                   px-4
@@ -101,16 +97,16 @@
                   ease-in-out
                   duration-300
                 "
+                @click="()=>{
+                  $router.push('/profile')
+                  profile_dropdown = false
+                }"
               >
                 <p class="text-gray-100 text-lg">
                   Profile
                 </p>
               </div>
               <div
-                @click="()=>{
-                  $router.push('/orders')
-                  profile_dropdown = false
-                }"
                 class="
                   py-3
                   px-4
@@ -124,13 +120,16 @@
                   ease-in-out
                   duration-300
                 "
+                @click="()=>{
+                  $router.push('/orders')
+                  profile_dropdown = false
+                }"
               >
                 <p class="text-gray-100 text-lg" to="/orders">
                   Orders
                 </p>
               </div>
               <div
-              @click="logout()"
                 class="
                   py-3
                   px-4
@@ -145,6 +144,7 @@
                   ease-in-out
                   duration-300
                 "
+                @click="logout()"
               >
                 <p class="text-gray-100 text-lg">
                   Logout
@@ -155,6 +155,7 @@
         </button>
       </div>
     </div>
+    <div id="scroll-progress" />
   </header>
 </template>
 
@@ -224,5 +225,17 @@ export default {
 }
 .sidenav-leave-active {
   transition: all 0.3s ease;
+}
+body {
+  min-height: 200vh;
+}
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 4px;
+  background: #7983ff;
+  z-index: 10000;
 }
 </style>
