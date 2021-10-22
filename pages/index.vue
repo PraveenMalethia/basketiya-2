@@ -3,7 +3,9 @@
     <Hero />
     <Featuring />
     <section class="text-gray-300 bg-gray-900 body-font">
-      <h1 class="text-center text-3xl">Featuring Products</h1>
+      <h1 class="text-center text-3xl">
+        Featuring Products
+      </h1>
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap justify-center -m-4">
           <div v-for="product in products" :key="product.id">
@@ -19,6 +21,7 @@
 
 <script>
 export default {
+  auth: false,
   data: () => {
     return {
       products: []

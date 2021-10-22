@@ -37,7 +37,7 @@
         </svg>
       </div>
       <nav
-        class="flex hidden md:block lg:w-2/5 flex-wrap items-center text-base"
+        class="flex md:block lg:w-2/5 flex-wrap items-center text-base"
       >
         <nuxt-link to="/" class="mr-5 hover:text-white cursor-pointer transition duration-200 ease-in-out">
           Home

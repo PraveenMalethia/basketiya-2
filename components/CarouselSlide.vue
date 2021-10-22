@@ -1,7 +1,7 @@
 <template>
   <transition :name="dir">
     <div v-show="visible">
-      <slot></slot>
+      <slot />
     </div>
   </transition>
 </template>
@@ -9,10 +9,12 @@
 <script>
 export default {
   props: {
+    // eslint-disable-next-line vue/require-default-prop
     index: null
   },
   computed: {
     visible () {
+      // eslint-disable-next-line no-console
       console.log(this.index, this.$parent.index)
       return this.index === this.$parent.index
     },
@@ -54,4 +56,3 @@ export default {
         to { transform: translateX(0);}
     }
 </style>
-

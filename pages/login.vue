@@ -51,22 +51,8 @@
               type="text"
               name="username"
               class="
-                w-full
-                bg-gray-800
-                rounded
-                border border-gray-700
-                focus:border-purple-500
-                focus:ring-4 focus:ring-purple-900
-                text-base
-                outline-none
-                text-gray-100
-                py-1
-                px-3
-                leading-8
-                transition-colors
-                duration-200
-                ease-in-out"
-            />
+                input-field"
+            >
           </div>
           <div class="relative mb-4">
             <label
@@ -79,24 +65,11 @@
               type="password"
               name="password"
               class="
-                w-full
-                bg-gray-800
-                rounded
-                border border-gray-700
-                focus:border-purple-500
-                focus:ring-4 focus:ring-purple-900
-                text-base
-                outline-none
-                text-gray-100
-                py-1
-                px-3
-                leading-8
-                transition-colors
-                duration-200
-                ease-in-out"
-            />
+                input-field"
+            >
           </div>
-          <p>demo account<br>
+          <p>
+            demo account<br>
             <code>username : test</code><br>
             <code>password : test@123</code>
           </p>
@@ -108,6 +81,12 @@
             btn-primary"
             @click="submit()"
           >
+            <spring-spinner
+              v-if="loading"
+              :animation-duration="3000"
+              :size="60"
+              color="#ff1d5e"
+            />
             Login
           </button>
           <nuxt-link
@@ -119,7 +98,9 @@
           >
             Sign Up
           </nuxt-link>
-          <p class="text-center mt-4">Or</p>
+          <p class="text-center mt-4">
+            Or
+          </p>
           <nuxt-link
             class="
             uppercase
@@ -150,7 +131,16 @@
 </template>
 
 <script>
+import { SpringSpinner } from 'epic-spinners'
 export default {
+  components: [SpringSpinner],
+  layout: 'auth',
+  data: () => ({
+    username: '',
+    password: '',
+    show: false,
+    loading: false
+  }),
   head: {
     title: 'Basketiya | Account Login',
     meta: [
@@ -163,19 +153,23 @@ export default {
       }
     ]
   },
-  layout: 'auth',
-  data: () => ({
-    username: '',
-    password: '',
-    show: false
-  }),
   methods: {
     async submit () {
+      this.loading = true
       const credentials = {
         username: this.username,
         password: this.password
       }
       await this.$auth.loginWith('local', { data: credentials })
+        .then((response) => {
+          this.loading = false
+          this.$router.push('/')
+        })
+        // eslint-disable-next-line node/handle-callback-err
+        .catch((error) => {
+          this.loading = false
+          this.$toast.error('Invalid Credentials')
+        })
     },
     clear () {
       this.username = ''

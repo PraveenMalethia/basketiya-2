@@ -18,8 +18,9 @@
     </div>
     <div class="flex items-center justify-center">
       <button
+        class="btn-secondary px-5 py-3"
         @click="loadMore()"
-        class="btn-secondary px-5 py-3">
+      >
         {{ loading ? "Loading . . ." : "Load More" }}
       </button>
     </div>
@@ -28,6 +29,18 @@
 
 <script>
 export default {
+  data: () => {
+    return {
+      loading: false,
+      products: []
+    }
+  },
+  async fetch () {
+    await this.$axios.get('https://fakestoreapi.com/products?limit=20')
+      .then((response) => {
+        this.products = response.data
+      })
+  },
   head: {
     title: 'Basketiya | Store',
     meta: [
@@ -39,18 +52,6 @@ export default {
         content: 'Basketiya | Store page. '
       }
     ]
-  },
-  async fetch () {
-    await this.$axios.get('https://fakestoreapi.com/products?limit=20')
-      .then((response) => {
-        this.products = response.data
-      })
-  },
-  data: () => {
-    return {
-      loading: false,
-      products: []
-    }
   },
   methods: {
     loadMore () {

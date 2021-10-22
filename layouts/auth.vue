@@ -1,8 +1,8 @@
 <template>
   <div>
-    <AuthHeader/>
-    <Nuxt/>
-    <Footer/>
+    <AuthHeader />
+    <Nuxt />
+    <AuthFooter />
   </div>
 </template>
 
