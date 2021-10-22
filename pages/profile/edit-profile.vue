@@ -28,57 +28,59 @@
         <div class="relative mb-4">
           <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
           <input
-            type="text"
             id="name"
+            v-model="user.name"
+            type="text"
             name="name"
             class="
               input-field
             "
-            v-model="user.name"
-          />
+          >
         </div>
         <div class="relative mb-4">
-          <label for="username" class="leading-7 text-sm text-gray-400"
-            >Username</label
+          <label
+            for="username"
+            class="leading-7 text-sm text-gray-400"
           >
+            Username
+          </label>
           <input
-            type="text"
             id="username"
+            v-model="user.username"
+            type="text"
             name="username"
             class="
               input-field
             "
-            v-model="user.username"
-          />
+          >
         </div>
         <div class="relative mb-4">
           <label for="bio" class="leading-7 text-sm text-gray-400">Bio</label>
           <textarea
-            class="input-field"
             id="bio"
-            name="bio"
             v-model="user.bio"
-          ></textarea>
+            class="input-field"
+            name="bio"
+          />
         </div>
         <div class="mb-6 w-full">
           <label
-          for="upload-file"
-          class="leading-7 text-sm text-gray-400"
-          >Avatar</label><br/>
+            for="upload-file"
+            class="leading-7 text-sm text-gray-400"
+          >Avatar</label><br>
           <a
-          :href="$axios.defaults.baseURL+ user.image"
-          target="_blank"
-            >Current Image :
-            <span class="text-blue-500">{{ user.image }}</span></a
-          >
+            :href="$axios.defaults.baseURL+ user.image"
+            target="_blank"
+          >Current Image :
+            <span class="text-blue-500">{{ user.image }}</span></a>
           <input
             id="upload-file"
-            @change="onFileSelected"
             type="file"
             hidden
             name="upload-file"
             accept="image/png, image/jpeg"
-          />
+            @change="onFileSelected"
+          >
           <label
             for="upload-file"
             refs="upload-file"
@@ -123,7 +125,7 @@
         "
       >
         <div class="lg:max-w-sm mx-auto my-auto lg:w-full md:w-4/4 w-6/6">
-          <img src="/svg/profile-update.svg" alt="ProfileUpdate" />
+          <img src="/svg/profile-update.svg" alt="ProfileUpdate">
         </div>
       </div>
     </div>
@@ -132,7 +134,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       selectedFileName: null,
       user: {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="text-gray-400 bg-gray-900 body-font">
-      <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap items-center h-screen">
         <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
           <h1 class="title-font font-medium text-3xl text-white">
             Sign Up And Create Account , Start Shopping Online  . . .
@@ -33,14 +33,14 @@
               class="leading-7 text-sm text-gray-400"
             >username</label>
             <input
-              v-model="username"
               id="username"
+              v-model="username"
               type="text"
               name="username"
               class="
                 input-field
               "
-            />
+            >
           </div>
           <div class="relative mb-4">
             <label
@@ -48,14 +48,14 @@
               class="leading-7 text-sm text-gray-400"
             >Email</label>
             <input
-              v-model="email"
               id="email"
+              v-model="email"
               type="email"
               name="email"
               class="
                 input-field
               "
-            />
+            >
           </div>
           <div class="relative mb-4">
             <label
@@ -63,14 +63,14 @@
               class="leading-7 text-sm text-gray-400"
             >Password</label>
             <input
-              v-model="password1"
               id="password"
+              v-model="password1"
               type="password"
               name="password"
               class="
                 input-field
               "
-            />
+            >
           </div>
           <div class="relative mb-4">
             <label
@@ -78,14 +78,14 @@
               class="leading-7 text-sm text-gray-400"
             >Confirm Password</label>
             <input
-              v-model="password2"
               id="confirmpassword"
+              v-model="password2"
               type="password"
               name="confirmpassword"
               class="
                 input-field
               "
-            />
+            >
           </div>
           <button
             class="
@@ -97,9 +97,9 @@
           >
             Sign Up
           </button>
-          <p class="text-xs mt-3">
-            Literally you probably haven't heard of them jean shorts.
-          </p>
+          <nuxt-link to="/login" class="text-xs mt-3">
+            Have an Account ? Login
+          </nuxt-link>
         </div>
       </div>
     </section>

@@ -1,53 +1,81 @@
 <template>
   <section class="text-gray-400 bg-gray-900 body-font">
     <div
-      class="
-        container
+      class="container
         mx-auto
         flex
-        px-5
-        py-10
+        px-4
         md:flex-row
         flex-col
         items-center
-        h-screen
-      "
+        h-screen"
     >
       <div
         class="
-          lg:flex-grow
-          md:w-1/2
-          lg:pr-24
-          md:pr-16
+          lg:w-2/3
+          md:w-2/2
           flex flex-col
-          md:items-start
-          md:text-left
-          mb-10
-          md:mb-0
-          items-center
-          text-center
+          md:ml-auto
+          w-full
+          md:py-8
+          mt-10
         "
       >
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+        <h1 class="text-white text-4xl font-medium title-font mb-5">
           Forget Password ?
         </h1>
-        <p class="mb-8 leading-relaxed">
+        <p class="text-white text-lg">
           No problem , we got you , just submit the email of your account . We will send you a reset password link.
         </p>
-        <div class="flex justify-center">
-          <div class="flex w-full sm:flex-row flex-col mx-auto px-8 sm:px-0 items-end sm:space-x-4 sm:space-y-0 space-y-4">
-            <div class="relative sm:mb-0 flex-grow w-full">
-              <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
-              <input id="email" type="email" name="email" class="input-field">
-            </div>
-            <button class="py-2 px-8 btn-success xs:w-full sm:w-full lg:w-1/3">
-              Reset
-            </button>
-          </div>
+        <div class="relative mb-4 mt-10">
+          <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="
+              input-field
+            "
+          >
+          <button
+            class="
+              btn-success
+              py-2
+              w-1/3
+            "
+          >
+            RESET
+          </button>
+          <nuxt-link
+            to="/login"
+            class="
+              py-2
+              ml-10
+              text-white
+              hover:text-gray-300
+            "
+          >
+            LOGIN
+          </nuxt-link>
         </div>
       </div>
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img src="/svg/forget-password.svg" alt="">
+      <div
+        class="
+          lg:w-full
+          md:w-full
+          bg-gray-900
+          rounded-lg
+          overflow-hidden
+          p-10
+          flex
+          items-end
+          justify-start
+          relative
+        "
+      >
+        <div class="lg:max-w-sm mx-auto my-auto lg:w-full md:w-4/4 w-6/6">
+          <img src="/svg/forget-password.svg" alt="ProfileUpdate">
+        </div>
       </div>
     </div>
   </section>

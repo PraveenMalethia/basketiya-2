@@ -24,7 +24,7 @@
           :to="`/store/${product.id}`"
           class="prod-img"
         >
-          <img :src="product.image" class="w-full h-50 object-cover object-center">
+          <img :src="product.image" width="100px" height="200px" class=" object-cover object-center">
         </nuxt-link>
         <div
           class="
