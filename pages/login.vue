@@ -108,9 +108,7 @@
 </template>
 
 <script>
-import { SpringSpinner } from 'epic-spinners'
 export default {
-  components: [SpringSpinner],
   layout: 'auth',
   data: () => ({
     username: '',
