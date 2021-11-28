@@ -73,22 +73,7 @@
             <code>username : test</code><br>
             <code>password : test@123</code>
           </p>
-          <button
-            class="
-            py-3
-            px-8
-            mt-5
-            btn-primary"
-            @click="submit()"
-          >
-            <spring-spinner
-              v-if="loading"
-              :animation-duration="3000"
-              :size="60"
-              color="#ff1d5e"
-            />
-            Login
-          </button>
+          <Button :click="submit" class-name="btn btn-primary px-3 py-2" text="Login" :loading="loading" />
           <nuxt-link
             class="
             mt-5
