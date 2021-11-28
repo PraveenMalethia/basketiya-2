@@ -13,7 +13,7 @@
     >
       <nav
         class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto"
-      ></nav>
+      />
       <a
         class="
           flex
@@ -35,10 +35,10 @@
             alt="profil"
             src="/images/logo.jpg"
             class="mx-auto object-cover rounded-full h-16 w-16"
-          />
+          >
         </nuxt-link>
       </a>
-      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0"></div>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0" />
     </div>
   </header>
 </template>

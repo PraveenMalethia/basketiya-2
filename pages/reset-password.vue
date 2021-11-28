@@ -8,7 +8,8 @@
         py-24
         md:flex-row
         flex-col
-        items-center">
+        items-center"
+    >
       <div
         class="
           lg:w-2/3
@@ -21,28 +22,30 @@
           md:mt-0
         "
       >
-        <h2 class="text-white text-lg mb-5 font-medium title-font">Change Password</h2>
+        <h2 class="text-white text-lg mb-5 font-medium title-font">
+          Change Password
+        </h2>
         <div class="relative mb-4">
           <label for="password" class="leading-7 text-sm text-gray-400">New Password</label>
           <input
-            type="password"
             id="password"
+            type="password"
             name="password"
             class="
               input-field
             "
-          />
+          >
         </div>
         <div class="relative mb-4">
           <label for="repeat_password" class="leading-7 text-sm text-gray-400">Repeat Password</label>
           <input
-            type="password"
             id="repeat_password"
+            type="password"
             name="repeat_password"
             class="
               input-field
             "
-          />
+          >
         </div>
         <button
           class="

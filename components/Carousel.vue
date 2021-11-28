@@ -1,16 +1,16 @@
 <template>
-  <div class="carousel" @keydown="checkSlide($event)" tabindex="0">
-    <slot></slot>
-      <button @click.prevent="next" class="z-20 bg-gray-800 opacity-75 p-4 text-white absolute top-2/4 -mt-5 right-0">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-      <button @click.prevent="prev" class="z-20 bg-gray-800 opacity-75 p-4 text-white absolute top-2/4 -mt-5 left-0">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
+  <div class="carousel" tabindex="0" @keydown="checkSlide($event)">
+    <slot />
+    <button class="z-20 bg-gray-800 opacity-75 p-4 text-white absolute top-2/4 -mt-5 right-0" @click.prevent="next">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+    <button class="z-20 bg-gray-800 opacity-75 p-4 text-white absolute top-2/4 -mt-5 left-0" @click.prevent="prev">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
   </div>
 </template>
 
@@ -41,7 +41,6 @@ export default {
       if (this.index >= this.slidesLength) {
         this.index = 0
       }
-      console.log(this.index)
       this.slideDirection = 'slide-right'
     },
     prev () {
@@ -49,7 +48,6 @@ export default {
       if (this.index < 0) {
         this.index = this.slidesLength - 1
       }
-      console.log(this.index)
       this.slideDirection = 'slide-left'
     },
     checkSlide (event) {

@@ -15,7 +15,8 @@
         justify-end
         flex-row
         items-center
-      ">
+      "
+    >
       <div
         class="absolute top-6 left-4 mr-4 text-white block md:hidden"
         :class="{ 'opacity-0 relative': side_nav }"

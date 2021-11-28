@@ -110,6 +110,14 @@
 export default {
   layout: 'auth',
   auth: false,
+  data: () => {
+    return {
+      username: '',
+      password1: '',
+      password2: '',
+      email: ''
+    }
+  },
   head: {
     title: 'Basketiya | Sig Up',
     meta: [
@@ -121,14 +129,6 @@ export default {
         content: 'Basketiya | Create your account on basketiya. '
       }
     ]
-  },
-  data: () => {
-    return {
-      username: '',
-      password1: '',
-      password2: '',
-      email: ''
-    }
   },
   methods: {
     signUp () {

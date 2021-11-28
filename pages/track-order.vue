@@ -329,7 +329,7 @@
               type="text"
               name="order_id"
               class="input-field"
-            />
+            >
           </div>
           <button class="btn-success px-8 py-3">
             Track order with id {{ orderId }}
@@ -344,6 +344,11 @@
 </template>
 <script>
 export default {
+  data: () => {
+    return {
+      orderId: ''
+    }
+  },
   head: {
     title: 'Basketiya | Track Your Order',
     meta: [
@@ -355,11 +360,6 @@ export default {
         content: 'Basketiya | Track your orders done on basketiya. '
       }
     ]
-  },
-  data: () => {
-    return {
-      orderId: ''
-    }
   }
 }
 </script>

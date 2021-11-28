@@ -15,11 +15,11 @@
               block
               leading-normal
             "
-            @click="toggleTabs(1)"
-            v-bind:class="{
+            :class="{
               'text-gray-900 bg-gray-200': openTab !== 1,
               'text-white bg-gray-800': openTab === 1,
             }"
+            @click="toggleTabs(1)"
           >
             Profile
           </a>
@@ -37,11 +37,11 @@
               block
               leading-normal
             "
-            @click="toggleTabs(2)"
-            v-bind:class="{
+            :class="{
               'text-gray-900 bg-gray-200': openTab !== 2,
               'text-white bg-gray-800': openTab === 2,
             }"
+            @click="toggleTabs(2)"
           >
             Settings
           </a>
@@ -59,11 +59,11 @@
               block
               leading-normal
             "
-            @click="toggleTabs(3)"
-            v-bind:class="{
+            :class="{
               'text-gray-900 bg-gray-200': openTab !== 3,
               'text-white bg-gray-800': openTab === 3,
             }"
+            @click="toggleTabs(3)"
           >
             Options
           </a>
@@ -84,35 +84,35 @@
       >
         <div class="px-4 py-5 flex-auto">
           <div class="tab-content tab-space">
-            <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }">
+            <div :class="{ hidden: openTab !== 1, block: openTab === 1 }">
               <p>
                 Collaboratively administrate empowered markets via plug-and-play
                 networks. Dynamically procrastinate B2C users after installed
                 base benefits.
-                <br />
-                <br />
+                <br>
+                <br>
                 Dramatically visualize customer directed convergence without
                 revolutionary ROI.
               </p>
             </div>
-            <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }">
+            <div :class="{ hidden: openTab !== 2, block: openTab === 2 }">
               <p>
                 Completely synergize resource taxing relationships via premier
                 niche markets. Professionally cultivate one-to-one customer
                 service with robust ideas.
-                <br />
-                <br />
+                <br>
+                <br>
                 Dynamically innovate resource-leveling customer service for
                 state of the art customer service.
               </p>
             </div>
-            <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }">
+            <div :class="{ hidden: openTab !== 3, block: openTab === 3 }">
               <p>
                 Efficiently unleash cross-media information without cross-media
                 value. Quickly maximize timely deliverables for real-time
                 schemas.
-                <br />
-                <br />
+                <br>
+                <br>
                 Dramatically maintain clicks-and-mortar solutions without
                 functional solutions.
               </p>

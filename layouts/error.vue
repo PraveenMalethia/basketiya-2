@@ -3,8 +3,8 @@
     <img
       src="/svg/error.svg"
       class="absolute h-full w-full object-cover"
-    />
-    <div class="inset-0 bg-black opacity-25 absolute"></div>
+    >
+    <div class="inset-0 bg-black opacity-25 absolute" />
     <div
       class="
         container
