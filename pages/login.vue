@@ -138,7 +138,9 @@ export default {
       await this.$auth.loginWith('local', { data: credentials })
         .then((response) => {
           this.loading = false
-          this.$router.push('/')
+          setTimeout(() => {
+            this.$router.push('/')
+          }, 3000)
         })
         // eslint-disable-next-line node/handle-callback-err
         .catch((error) => {
