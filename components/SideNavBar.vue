@@ -59,7 +59,6 @@ export default {
   },
   methods: {
     close () {
-      console.log('emitting')
       this.$emit('close')
     }
   }
