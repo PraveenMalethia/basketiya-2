@@ -331,9 +331,7 @@
               class="input-field"
             >
           </div>
-          <button class="btn-success px-8 py-3">
-            Track order with id {{ orderId }}
-          </button>
+          <Button :click="TrackOrder" class-name="btn btn-primary px-3 py-3" :text="`Track Order ID : ${orderId}`" :success-text="`Track Order ID : ${orderId}`" :loading="loading" />
           <p class="text-xs text-gray-400 text-opacity-90 mt-3">
             Your Order status will be display on left side.
           </p>
@@ -346,7 +344,8 @@
 export default {
   data: () => {
     return {
-      orderId: ''
+      orderId: '',
+      loading: false
     }
   },
   head: {
@@ -360,6 +359,14 @@ export default {
         content: 'Basketiya | Track your orders done on basketiya. '
       }
     ]
+  },
+  methods: {
+    TrackOrder () {
+      this.loading = true
+      setTimeout(() => {
+        this.loading = false
+      }, 3000)
+    }
   }
 }
 </script>

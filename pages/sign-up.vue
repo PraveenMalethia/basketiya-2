@@ -90,7 +90,7 @@
           <button
             class="
               btn-primary
-              py-2
+              py-3
               px-8
             "
             @click="signUp"

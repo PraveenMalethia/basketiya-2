@@ -1,75 +1,50 @@
 <template>
-  <div class="w-80 flex justify-center items-center transform hover:scale-105 transition duration-400 ease-in-out">
-    <div class="w-full p-4 h-full">
-      <div
-        class="
-          flex flex-col
-          justify-center
-          p-8
-          items-center
-          bg-white
-          rounded-lg
-          flex-grow
-        "
+  <div class=" p-4 w-full h-full">
+    <a class="block relative h-48 rounded overflow-hidden">
+      <img
+        data-tilt
+        data-tilt-scale="1.1"
+        alt="ecommerce"
+        class="object-contain bg-gray-50 object-center w-full h-full block"
+        width="100%"
+        height="100%"
+        :src="product.image"
       >
-        <nuxt-link
-          :to="`/store/${product.id}`"
-          class="prod-title"
-        >
-          <p class="text-2xl uppercase text-gray-900 font-bold">
-            {{ product.category }}
-          </p>
-        </nuxt-link>
-        <nuxt-link
-          :to="`/store/${product.id}`"
-          class="prod-img"
-        >
-          <img :src="product.image" width="100px" height="200px" class=" object-cover object-center">
-        </nuxt-link>
-        <div
-          class="
-            flex flex-col
-            md:flex-row
-            justify-between
-            items-center
-            text-gray-900
-            mt-5
-          "
-        >
-          <p class="font-bold text-xl">
-            65 $
-          </p>
-          <button
-            class="
-              px-6
-              py-2
-              transition
-              ease-in
-              duration-200
-              uppercase
-              rounded-full
-              hover:bg-gray-800
-              hover:text-white
-              border-2 border-gray-900
-              focus:outline-none
-              font-bold
-              ml-5
-            "
-          >
-            Add to cart
-          </button>
-        </div>
+    </a>
+    <div class="mt-4 flex justify-between">
+      <div class="">
+        <h2 class="text-white title-font text-lg font-medium">
+          Prodcut Name
+        </h2>
+        <p class="mt-1">
+          ${{ product.price }}
+        </p>
+      </div>
+      <div class="">
+        <Button :click="AddToCart" class-name="btn btn-primary px-3 py-2" text="Add to cart" :loading="loading" success-text="Added to cart" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+require('~/assets/js/vanilla-tilt.js')
 export default {
   props: {
     product: {
       type: Object,
       required: true
+    }
+  },
+  data: () => ({
+    loading: false
+  }),
+  methods: {
+    AddToCart () {
+      this.loading = true
+      setTimeout(() => {
+        this.loading = false
+      }, 2000)
     }
   }
 }

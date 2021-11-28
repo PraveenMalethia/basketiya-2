@@ -38,16 +38,7 @@
           try-hard chambray.
         </p>
         <div class="flex justify-center">
-          <nuxt-link
-            class="
-              btn-primary
-              px-8 py-3
-              mr-1 mb-1
-            "
-            to="/store"
-          >
-            Let's start shopping . . . {{ $store.state.categories.counters }}
-          </nuxt-link>
+          <Button to="/store" class-name="btn btn-primary px-3 py-2" text="Lets Start Shopping" />
         </div>
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

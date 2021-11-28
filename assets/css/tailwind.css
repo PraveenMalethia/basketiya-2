@@ -9,16 +9,16 @@
 }
 
 .btn-primary {
-  @apply text-purple-500 bg-transparent border-2 border-solid border-purple-500 hover:bg-purple-500 hover:text-white font-bold uppercase rounded-2xl outline-none focus:outline-none transition-all duration-150
+  @apply w-full text-purple-500 bg-transparent  border-solid border-purple-500 hover:bg-purple-500 hover:text-white font-bold uppercase rounded-2xl outline-none focus:outline-none transition-all duration-150 text-center
 }
 
 .btn-secondary {
-  @apply text-gray-200 hover:text-gray-800 text-center bg-transparent border-2 border-solid border-gray-200 hover:bg-gray-200 font-bold uppercase rounded-2xl outline-none focus:outline-none transition-all duration-150
+  @apply w-full text-gray-200 bg-transparent border-solid border-gray-200 hover:bg-gray-200 hover:text-gray-800 font-bold uppercase rounded-2xl outline-none focus:outline-none transition-all duration-150 text-center
 }
 
 .btn-success {
-  @apply mt-8 text-green-400 bg-transparent border-2 border-solid border-green-500 hover:bg-green-500 hover:text-white font-bold uppercase rounded-2xl outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 text-center
+  @apply w-full text-green-400 bg-transparent  border-solid border-green-500 hover:bg-green-500 hover:text-white font-bold uppercase rounded-2xl outline-none focus:outline-none transition-all duration-150 text-center
 }
 .btn-danger {
-  @apply text-red-500 bg-transparent border-2 border-solid border-red-500 hover:bg-red-500 hover:text-white font-bold uppercase rounded-full outline-none focus:outline-none transition-all duration-150
+  @apply w-full text-red-500 bg-transparent  border-solid border-red-500 hover:bg-red-500 hover:text-white font-bold uppercase rounded-full outline-none focus:outline-none transition-all duration-150 text-center
 }

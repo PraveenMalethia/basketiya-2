@@ -2,13 +2,10 @@
   <div>
     <Hero />
     <Featuring />
-    <section class="text-gray-300 bg-gray-900 body-font">
-      <h1 class="text-center text-3xl">
-        Featuring Products
-      </h1>
+    <section class="text-gray-400 bg-gray-900 body-font">
       <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap justify-center -m-4">
-          <div v-for="product in products" :key="product.id">
+        <div class="flex flex-wrap -m-4">
+          <div v-for="product in products" :key="product.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
             <Product :product="product" />
           </div>
         </div>
@@ -28,7 +25,8 @@ export default {
     }
   },
   async fetch () {
-    await this.$axios.get('https://fakestoreapi.com/products?limit=20')
+    await this.$axios
+      .get('https://fakestoreapi.com/products?limit=20')
       .then((response) => {
         this.products = response.data
       })

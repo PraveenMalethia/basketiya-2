@@ -10,11 +10,15 @@
           <b>Enter order id and get details.</b>
         </p>
       </div>
-      <div class="flex flex-wrap justify-center -m-4">
-        <div v-for="product in products" :key="product.id">
-          <Product :product="product" />
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div v-for="product in products" :key="product.id" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <Product :product="product" />
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
     <div class="flex items-center justify-center">
       <button

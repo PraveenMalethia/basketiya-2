@@ -28,28 +28,16 @@
           meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af
           fingerstache pitchfork.
         </p>
-        <div class="flex justify-center">
+        <div class="flex w-1/4 justify-start">
           <nuxt-link
             class="
-              inline-flex
               py-3
-              px-8
               btn-primary
             "
             to="/profile/edit-profile"
           >
             Edit Profile
           </nuxt-link>
-          <button
-            class="
-              ml-5
-              btn-danger
-              py-3
-              px-8
-            "
-          >
-            Delete Profile
-          </button>
         </div>
       </div>
     </div>

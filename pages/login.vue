@@ -103,27 +103,19 @@
           </p>
           <nuxt-link
             class="
-            uppercase
-            font-bold
-            text-black
-            hover:text-white
-            py-2
-            px-6
-            mt-5
-            focus:outline-none
-            hover:bg-gray-900
-            rounded-xl
-            transition
-            ease-in-out
-            duration-400
-            border-2
-            border-gray-300
-            text-center
-            bg-gray-300"
+            btn-secondary
+            py-3
+            px-2
+            mt-2
+            "
             to="/forget-password"
           >
             Forget Password ?
           </nuxt-link>
+          <br>
+          <br>
+          <br>
+          <br>
         </div>
       </div>
     </section>
