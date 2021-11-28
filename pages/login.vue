@@ -73,7 +73,7 @@
             <code>username : test</code><br>
             <code>password : test@123</code>
           </p>
-          <Button :click="submit" class-name="btn btn-primary px-3 py-2" text="Login" :loading="loading" />
+          <Button :click="submit" class-name="btn btn-primary px-3 py-2 mt-4" text="Login" :loading="loading" />
           <nuxt-link
             class="
             mt-5
