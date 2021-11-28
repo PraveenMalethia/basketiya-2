@@ -65,15 +65,7 @@
             name="message"
           />
         </div>
-        <button
-          class="
-            btn-success
-            px-8
-            py-3
-          "
-        >
-          Confirm
-        </button>
+        <Button :click="Checkout" class-name="btn btn-primary px-3 py-2" text="Confirm" :loading="loading" success-text="Order Placed Successfully" />
         <p class="text-x=s text-gray-400 text-opacity-90 mt-3">
           by clicking CONFIRM button your order will be placed . Please check your details again.
         </p>
@@ -83,6 +75,9 @@
 </template>
 <script>
 export default {
+  data: () => ({
+    loading: false
+  }),
   head: {
     title: 'Basketiya | Cart',
     meta: [
@@ -94,6 +89,14 @@ export default {
         content: 'Basketiya | See your cart here'
       }
     ]
+  },
+  methods: {
+    Checkout () {
+      this.loading = true
+      setTimeout(() => {
+        this.loading = false
+      }, 2000)
+    }
   }
 }
 </script>

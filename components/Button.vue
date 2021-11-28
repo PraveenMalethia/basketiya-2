@@ -55,7 +55,7 @@ export default {
       return this.loading === true
     },
     Defaulttext () {
-      return this.successText ? this.successText : this.text
+      return this.text ? this.text : this.successText
     }
   },
   methods: {
