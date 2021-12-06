@@ -14,8 +14,8 @@
         class="lg:w-full md:w-1/2 sm:w-full  rounded-lg overflow-hidden flex items-end justify-start relative"
       >
         <div class="flex flex-col">
-          <div v-for="i in 3" :key="i" class="py-2 px-2">
-            <CartItem :number="i" />
+          <div v-for="product in cartItems" :key="product.id" class="py-2 px-2">
+            <CartItem :product="product" />
           </div>
         </div>
       </div>
@@ -76,8 +76,18 @@
 <script>
 export default {
   data: () => ({
-    loading: false
+    loading: false,
+    cartItems: []
   }),
+  async fetch () {
+    this.loading = true
+    await this.$axios.get('/cart')
+      .then((response) => {
+        this.cartItems = response.data
+        console.log(response.data)
+      })
+    this.loading = false
+  },
   head: {
     title: 'Basketiya | Cart',
     meta: [

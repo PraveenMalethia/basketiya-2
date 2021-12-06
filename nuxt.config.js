@@ -36,6 +36,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/toast',
     '@nuxtjs/auth-next'
   ],
 
@@ -50,6 +51,10 @@ export default {
       lang: 'en',
       name: 'Basketiya : Home'
     }
+  },
+  toast: {
+    position: 'top-center',
+    duration: 2000
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -8,13 +8,13 @@
         class="object-contain bg-gray-50 object-center w-full h-full block"
         width="100%"
         height="100%"
-        :src="product.image"
+        :src="`${$axios.defaults.baseURL}`+product.featured_image"
       >
     </a>
     <div class="mt-4 flex justify-between">
       <div class="">
         <h2 class="text-white title-font text-lg font-medium">
-          Prodcut Name
+          {{product.name}}
         </h2>
         <p class="mt-1">
           ${{ product.price }}
@@ -39,17 +39,27 @@ export default {
   data: () => ({
     loading: false
   }),
+  mounted () {
+    console.log(this.product)
+  },
   methods: {
-    AddToCart () {
+    async AddToCart () {
       this.loading = true
-      if (this.$state.auth.loggedIn) {
+      if (!this.$auth.loggedIn) {
         this.$router.push('/login')
         this.loading = false
         return
       }
-      setTimeout(() => {
-        this.loading = false
-      }, 2000)
+      await this.$axios.post('/add-to-cart/', {
+        product_id: this.product.id
+      })
+        .then((response) => {
+          this.$toast.success(response.data.message)
+          this.loading = false
+        })
+        .catch((error) => {
+          this.$toast.error(error)
+        })
     }
   }
 }

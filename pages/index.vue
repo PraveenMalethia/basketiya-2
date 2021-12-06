@@ -26,9 +26,12 @@ export default {
   },
   async fetch () {
     await this.$axios
-      .get('https://fakestoreapi.com/products?limit=20')
+      .get('/')
       .then((response) => {
         this.products = response.data
+      })
+      .catch((error) => {
+        this.$toast.error(error)
       })
   },
   head: {
