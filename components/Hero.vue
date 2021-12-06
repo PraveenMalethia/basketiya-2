@@ -38,7 +38,7 @@
           try-hard chambray.
         </p>
         <div class="flex justify-center">
-          <Button to="/store" class-name="btn btn-primary px-3 py-2" text="Lets Start Shopping" />
+          <Button to="/store" class-name="btn btn-primary px-3 py-2" text="Lets Start Shopping" success-text="Lets Start Shopping" />
         </div>
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

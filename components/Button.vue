@@ -38,7 +38,7 @@ export default {
     // eslint-disable-next-line vue/require-default-prop
     click: {
       type: Function,
-      required: true
+      required: false
     },
     // eslint-disable-next-line vue/require-default-prop
     to: {
