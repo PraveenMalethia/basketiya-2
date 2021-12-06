@@ -1,5 +1,5 @@
 <template>
-  <section class="text-gray-600 body-font relative">
+  <section class="text-gray-200 body-font relative">
     <div class="flex flex-col text-center w-full py-16">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
         Your Cart

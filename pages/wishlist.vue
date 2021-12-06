@@ -5,10 +5,6 @@
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
           Your Wishlist
         </h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Here you can track your order .<br>
-          <b>Enter order id and get details.</b>
-        </p>
       </div>
       <section class="text-gray-400 bg-gray-900 body-font">
         <div class="container px-5 py-24 mx-auto">
