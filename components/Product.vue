@@ -42,6 +42,11 @@ export default {
   methods: {
     AddToCart () {
       this.loading = true
+      if (this.$state.auth.loggedIn) {
+        this.$router.push('/login')
+        this.loading = false
+        return
+      }
       setTimeout(() => {
         this.loading = false
       }, 2000)
